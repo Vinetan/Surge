@@ -14,8 +14,8 @@ flushDNS = script-name=flushDNS,update-interval=600
         dnsCache;
     if (typeof $argument != "undefined") {
         let arg = Object.fromEntries($argument.split("&").map((item) => item.split("=")));
-        if (arg.title) panel.title = arg.title;
-        if (arg.icon) panel.icon = arg.icon;
+        if (arg.title) panel.title = "清除DNS";
+        if (arg.icon) panel.icon = "network";
         if (arg.color) panel["icon-color"] = arg.color;
         if (arg.server == "false") showServer = false;
     }
