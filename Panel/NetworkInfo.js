@@ -28,17 +28,61 @@ const { wifi, v4, v6 } = $network;
 
 let carrierName = '';
 const carrierMap = {
-  //台灣電信業者 MNC Code
-  '466-11': '中華電信','466-92': '中華電信',
-  '466-01': '遠傳電信','466-03': '遠傳電信',
-  '466-97': '台灣大哥大',
-  '466-89': '台灣之星',
-  '466-05': '亞太電信',
-  //中國電信業者 MNC Code
-  '460-00': '中国移动','460-02': '中国移动','460-07': '中国移动',
-  '460-01': '中国联通','460-06': '中国联通','460-09': '中国联通',
-  '460-03': '中国电信','460-05': '中国电信','460-11': '中国电信',
-  '460-20': '中国铁通',
+var 中国电信 = ['460-03','460-05','460-11'];
+var 中国联通 = ['460-01','460-06','460-09'];
+var 中国移动 = ['460-00','460-02','460-04','460-07','460-08'];
+var 中国广电 = ['460-15'];
+var 中国铁路 = ['460-20'];
+$httpClient.get("http://ip-api.com/json", function(error, response, data){
+    let v4 = $network.v4.primaryAddress
+    let ssid = $network.wifi.ssid
+    let carrier = $network["cellular-data"].carrier
+    let router = $network.v4.primaryRouter
+    let radio = $network["cellular-data"].radio
+    let v6 = $network.v6.primaryAddress
+    let jsonData = JSON.parse(data)
+    let ip = jsonData.query
+    let country = jsonData.country
+    let emoji = getFlagEmoji(jsonData.countryCode)
+    let city = jsonData.city
+    let isp = jsonData.isp
+    var regex=/^192.168/
+    if(regex.test(v4)){
+        $done({
+		title: `${ssid}`,
+		content: `IP: ${ip}\nRouter: ${router}\nLocal IP: ${v4}\nISP: ${isp}\n位置: ${emoji}${country} - ${city}`,
+        icon: "wifi",
+        'icon-color': "#00FF00"
+	});
+    }else{
+        if(中国电信.includes(carrier)){
+            运营商 = "中国电信";
+        }else if(中国联通.includes(carrier)){
+            运营商 = "中国联通";
+        }else if(中国移动.includes(carrier)){
+            运营商 = "中国移动";
+        }else if(中国广电.includes(carrier)){
+            运营商 = "中国广电";
+        }else if(中国铁路.includes(carrier)){
+            运营商 = "中国铁路";
+        }else{
+            运营商 = "行动网络";
+        }
+            $done({
+                title: 运营商,
+                content: `Radio: ${radio}\nIP: ${ip}\nLocal IP: ${v4}\nISP: ${isp}\n位置: ${emoji}${country} - ${city}`,
+                icon: "simcard.fill",
+                'icon-color': "#EA0300"
+	        });}
+});
+
+function getFlagEmoji(countryCode) {
+    const codePoints = countryCode
+      .toUpperCase()
+      .split('')
+      .map(char =>  127397 + char.charCodeAt());
+    return String.fromCodePoint(...codePoints);
+}
 };
 
 if (!v4.primaryAddress && !v6.primaryAddress) {
