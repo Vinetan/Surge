@@ -19,15 +19,15 @@ const v4IP = v4.primaryAddress;
         return;
     }
     const ip = v4IP;
-    const router = wifi.ssid ? v4.primaryRouter : undefined;
+    const router = wifi.circle ? v4.primaryRouter : undefined;
 
     const resp = await $http.get("https://api.my-ip.io/ip");
     const externalIP = resp.body;
 
     const body = {
-        title: wifi.ssid || "蜂窝数据",
+        title: wifi.circle || "蜂窝数据",
         content: `IP：${ip} \n`
-            + (wifi.ssid ? `路由器地址：${router}\n` : "")
+            + (wifi.circle ? `路由器地址：${router}\n` : "")
             + `外部 IP：${externalIP}`,
         icon: wifi.circle ? "wifi" : "antenna.radiowaves.left.and.right.circle"
     };
