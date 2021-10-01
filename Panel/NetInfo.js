@@ -44,6 +44,7 @@ function getNetworkInfo() {
         title: '发生错误',
         content: '无法获得目前网络信息\n请检查网络设备状态后重试',
         icon: 'wifi.exclamationmark',
+        'icon-color': '#CB1B45',
       });
     }
 
@@ -64,7 +65,7 @@ function getNetworkInfo() {
         `节点位置 : ${getFlagEmoji(info.countryCode)} | ${info.country} - ${
           info.city
         }`,
-      icon: wifi.ssid ? 'wifi' : 'simcard',
+      icon: wifi.ssid ? 'wifi.circle' : 'antenna.radiowaves.left.and.right.circle',
       'icon-color': wifi.ssid ? '0A60FF' : '#F9BF45',
     });
   });
