@@ -22,12 +22,12 @@ const BASE_URL = 'https://www.youtube.com/premium'
   await test()
     .then((code) => {
       if (code === 'Not Available') {
-        result['icon'] = 'xmark.shield'
+        result['icon'] = 'x.circle'
         result['icon-color'] = "#CB1B45"
         result['content'] = '不支持解锁 YouTube Premium'
         return
       }
-      result['icon'] = "checkmark.shield"
+      result['icon'] = "checkmark.circle"
       result['icon-color'] = '#1B813E'
       result['content'] = '支持解锁 YouTube Premium\n解锁国家：' + code
     })
