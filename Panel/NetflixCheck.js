@@ -25,7 +25,7 @@ const AREA_TEST_FILM_ID = 80018499
         return test(AREA_TEST_FILM_ID)
       }
       result['Title'] ="Netflix 影剧版权 IP 锁检测"
-      result['icon'] = "checkmark.shield"
+      result['icon'] = "checkmark.circle"
 	    result['icon-color'] = '#1B813E'
       //result['icon'] = params.icon1
 	    //result['icon-color'] = params.color1
@@ -37,7 +37,7 @@ const AREA_TEST_FILM_ID = 80018499
         return Promise.reject('Not Available')
       }
       result['Title'] ="Netflix 影剧版权 IP 锁检测"
-      result['icon'] = "exclamationmark.shield"
+      result['icon'] = "checkmark.circle.trianglebadge.exclamationmark"
 	    result['icon-color'] = "#EFBB24"
       //result['icon'] = params.icon2
 	    //result['icon-color'] = params.color2
@@ -47,7 +47,7 @@ const AREA_TEST_FILM_ID = 80018499
     .catch((error) => {
       if (error === 'Not Available') {
         result['Title'] ="Netflix 影剧版权 IP 锁检测"
-        result['icon'] = "xmark.shield"
+        result['icon'] = "x.circle"
 	      result['icon-color'] = "#CB1B45"
         //result['icon'] = params.icon3
 	      //result['icon-color'] = params.color3
