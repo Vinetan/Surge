@@ -22,7 +22,9 @@ if (!v4.primaryAddress && !v6.primaryAddress) {
     title: '没有网络',
     content: '尚未连接到网络\n请检查网络设备状态后重试',
     icon: 'wifi.exclamationmark',
+    /*
     'icon-color': '#CB1B45',
+    */
   });
 } else {
   if (!wifi.ssid) {
