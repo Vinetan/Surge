@@ -13,10 +13,10 @@ const BASE_URL = 'https://www.youtube.com/premium'
 
 ;(async () => {
   let result = {
-    title: 'YouTube Premium 解锁检测',
+    title: 'YouTube Premium 解鎖測試',
     icon: 'exclamationmark.arrow.triangle.2.circlepath',
     'icon-color':"#77428D",
-    content: '检测失败，请检查网络状态',
+    content: '測試失敗，請檢查網路狀態',
   }
 
   await test()
@@ -24,12 +24,12 @@ const BASE_URL = 'https://www.youtube.com/premium'
       if (code === 'Not Available') {
         result['icon'] = 'xmark.shield'
         result['icon-color'] = "#CB1B45"
-        result['content'] = '不支持解锁 YouTube Premium'
+        result['content'] = '不支援解鎖 YouTube Premium'
         return
       }
       result['icon'] = "checkmark.shield"
       result['icon-color'] = '#1B813E'
-      result['content'] = '支持解锁 YouTube Premium\n解锁国家：' + code
+      result['content'] = '支援解鎖 YouTube Premium\n解鎖國家：' + code
     })
     .finally(() => {
       $done(result)
