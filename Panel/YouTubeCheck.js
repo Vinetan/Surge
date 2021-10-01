@@ -6,7 +6,7 @@
 premiumCheck = script-name=premiumCheck, title="YouTube Premium 跨區解鎖測試", update-interval=1
 
 [Script]
-premiumCheck = type=generic,script-path=https://raw.githubusercontent.com/Nebulosa-Cat/Surge/main/Panel/YouTube-Premium-Test/premiumCheck.js, timeout=30
+premiumCheck = type=generic,script-path=https://raw.githubusercontent.com/Vinetan/Surge/main/Panel/YouTubeCheck.js, timeout=30
 */
 
 const BASE_URL = 'https://www.youtube.com/premium'
