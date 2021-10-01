@@ -7,12 +7,12 @@
 flushDNS = script-name=flushDNS,update-interval=600
 
 [Script]
-flushDNS = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/flushDNS.js,argument=title=DNS FLush&icon=arrow.triangle.2.circlepath.circle&color=#0089A7&server=false
+flushDNS = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/Vinetan/Surge/main/Panel/FlushDNS.js,argument=title=DNS FLush&icon=arrow.triangle.2.circlepath.circle&color=#0089A7&server=false
 
 [Script]
-flushDNS = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/flushDNS.js
+flushDNS = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/Vinetan/Surge/main/Panel/FlushDNS.js
 // use "title" or "icon" or "color" or "server" in "argument":
-// flushDNS = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/flushDNS.js,argument=title=DNS FLush&icon=arrow.clockwise&color=#3d3d5b&server=false
+// flushDNS = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/Vinetan/Surge/main/Panel/FlushDNS.js,argument=title=DNS FLush&icon=arrow.clockwise&color=#3d3d5b&server=false
 
 [Panel]
 flushDNS = script-name=flushDNS,update-interval=600
