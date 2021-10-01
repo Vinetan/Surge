@@ -62,7 +62,7 @@ function getNetworkInfo() {
           : '') +
         `IP : ${info.query}\n` +
         `ISP : ${info.isp}\n` +
-        `位置 : ${getFlagEmoji(info.countryCode)} | ${info.country} - ${
+        `Location : ${getFlagEmoji(info.countryCode)} | ${info.country} - ${
           info.city
         }`,
       icon: wifi.ssid ? 'wifi.circle' : 'antenna.radiowaves.left.and.right.circle',
