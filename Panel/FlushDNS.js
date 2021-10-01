@@ -12,7 +12,7 @@ flushDNS = script-name=flushDNS,update-interval=600
     let panel = { 
             title: "Flush DNS"
             icon: "network"
-                },
+        },
         showServer = true,
         dnsCache;
     if (typeof $argument != "undefined") {
