@@ -65,7 +65,7 @@ function getNetworkInfo() {
           info.city
         }`,
       icon: wifi.ssid ? 'wifi' : 'simcard',
-      'icon-color': wifi.ssid ? '#005CAF' : '#F9BF45',
+      'icon-color': wifi.ssid ? '0A60FF' : '#F9BF45',
     });
   });
 }
