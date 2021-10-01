@@ -60,9 +60,9 @@ function getNetworkInfo() {
         (v6.primaryRouter && wifi.ssid
           ? `Router IPv6 : ${v6.primaryRouter}\n`
           : '') +
-        `节点 IP : ${info.query}\n` +
-        `节点 ISP : ${info.isp}\n` +
-        `节点位置 : ${getFlagEmoji(info.countryCode)} | ${info.country} - ${
+        `IP : ${info.query}\n` +
+        `ISP : ${info.isp}\n` +
+        `位置 : ${getFlagEmoji(info.countryCode)} | ${info.country} - ${
           info.city
         }`,
       icon: wifi.ssid ? 'wifi.circle' : 'antenna.radiowaves.left.and.right.circle',
