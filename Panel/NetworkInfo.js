@@ -6,6 +6,24 @@
  * 並且感謝Pysta大佬、野比大佬(@NobyDa)、皮樂大佬(@Hiraku)技術支援
  * 以及鴿子大佬(@zZPiglet)精簡化code
  */
+/*
+#!name=Network Info Panel
+#!desc=網路詳情面板測試版 @Nebulosa-Cat
+#!system=ios
+
+[Panel]
+NetInfoPanel=title="",content="",style=info,script-name=net-info-panel.js,update-interval=1
+
+[Script]
+net-info-panel.js=script-path=https://raw.githubusercontent.com/Nebulosa-Cat/Surge/main/Panel/Network-Info/networkCheck.js,type=generic
+
+[Host]
+ip-api.com = 208.95.112.1
+ipapi.co = 172.67.69.226
+
+[Rule]
+DOMAIN,ipapi.co,DIRECT
+*/
 const { wifi, v4, v6 } = $network;
 
 let carrierName = '';
