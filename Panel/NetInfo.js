@@ -62,7 +62,7 @@ function getNetworkInfo() {
           : '') +
         `IP : ${info.query}\n` +
         `ISP : ${info.isp}\n` +
-        `Location : ${getFlagEmoji(info.countryCode)} ${info.country} - ${info.city}`,
+        `Location : ${getFlagEmoji(info.countryCode)} - ${info.city}`,
       icon: wifi.ssid ? 'wifi.circle' : 'antenna.radiowaves.left.and.right.circle',
       'icon-color': wifi.ssid ? '0A60FF' : '#F9BF45',
     });
