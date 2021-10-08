@@ -43,7 +43,7 @@ const STATUS_TIMEOUT = -1
 const STATUS_ERROR = -2
 
 const DEFAULT_OPTIONS = {
-  title: '📽️ 𝑫𝒊𝒔𝒏𝒆𝒚+ 解锁检测',
+  title: '𝑫𝒊𝒔𝒏𝒆𝒚+ 解锁检测',
   availableContent: '解锁 𝑫𝒊𝒔𝒏𝒆𝒚+ ➟ #REGION_FLAG# #REGION_NAME#',
   availableIcon: 'checkmark.circle',
   availableIconColor: undefined,
