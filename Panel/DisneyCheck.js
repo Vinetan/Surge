@@ -44,7 +44,7 @@ const STATUS_ERROR = -2
 
 const DEFAULT_OPTIONS = {
   title: '𝑫𝒊𝒔𝒏𝒆𝒚+ 解锁检测',
-  availableContent: '解锁 𝑫𝒊𝒔𝒏𝒆𝒚+ ➟ #REGION_FLAG# #REGION_NAME#',
+  availableContent: '解锁国家： #REGION_FLAG# #REGION_NAME#',
   availableIcon: 'checkmark.circle',
   availableIconColor: '#1B813E',
   availableStyle: 'good',
@@ -52,7 +52,7 @@ const DEFAULT_OPTIONS = {
   comingIcon: 'checkmark.circle.trianglebadge.exclamationmark',
   comingIconColor: '#EFBB24',
   comingStyle: 'info',
-  notAvailableContent: '封锁 📽️ 𝑫𝒊𝒔𝒏𝒆𝒚+',
+  notAvailableContent: '封锁 𝑫𝒊𝒔𝒏𝒆𝒚+',
   notAvailableIcon: 'x.circle',
   notAvailableIconColor: '#CB1B45',
   notAvailableStyle: 'alert',
