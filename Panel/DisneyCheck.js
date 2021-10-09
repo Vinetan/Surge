@@ -44,11 +44,11 @@ const STATUS_ERROR = -2
 
 const DEFAULT_OPTIONS = {
   title: '𝑫𝒊𝒔𝒏𝒆𝒚+ 解锁检测',
-  availableContent: '解锁国家： #REGION_FLAG# #REGION_NAME#',
+  availableContent: '解锁国家： #REGION_FLAG# #REGION_NAME_EN#',
   availableIcon: 'checkmark.circle',
   availableIconColor: '#1B813E',
   availableStyle: 'good',
-  comingContent: '即将登陆 ➟ #REGION_FLAG# #REGION_NAME#',
+  comingContent: '即将登陆 ➟ #REGION_FLAG# #REGION_NAME_EN#',
   comingIcon: 'checkmark.circle.trianglebadge.exclamationmark',
   comingIconColor: '#EFBB24',
   comingStyle: 'info',
