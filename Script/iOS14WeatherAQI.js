@@ -1,7 +1,21 @@
+// 此脚本仅适用于 iOS 14 的天气 App
+// Developed by Hackl0us (https://github.com/hackl0us)
+
+// STEP 1: 前往 https://aqicn.org/data-platform/token/ 注册账户，将申请的 API Token 填入下方
 const aqicnToken = '4da495b357eb88a0265db3a6ad663ca37a985c63'
+
+// STEP 2: 参考下方配置片段，在代理工具的配置文件中添加对应的配置。注意：script-path 后应该替换为添加 apicnToken 值后的脚本路径
+/*
+	[Script]
+	iOS14美标空气质量 = type=http-response,pattern=https://weather-data.apple.com/v1/weather/[\w-]+/-?[0-9]+\.[0-9]+/-?[0-9]+\.[0-9]+\?,requires-body=true,script-path=path/to/iOS14_Weather_AQI_US.js
+
+	[MITM]
+	hostname = weather-data.apple.com
+*/
+
 const AirQualityStandard = {
 	CN: 'HJ6332012.2113',
- 	US: 'EPA_NowCast.2113'
+	US: 'EPA_NowCast.2113'
 }
 
 const AirQualityLevel = {
