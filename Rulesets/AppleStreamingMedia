@@ -1,26 +1,35 @@
 #播放上传歌曲
 DOMAIN-SUFFIX,blobstore.apple.com
 DOMAIN-SUFFIX,audio.itunes.apple.com
+
 #Beats 1 直播
 DOMAIN-SUFFIX,itsliveradio.apple.com
+
 #Beats 1 视频
 DOMAIN-SUFFIX,aodp-ssl.apple.com
+
 #电视、电影预告片
 DOMAIN-SUFFIX,video-ssl.itunes.apple.com
+
 #MV、电视、电影正片
 DOMAIN-SUFFIX,mvod.itunes.apple.com
 DOMAIN,mvod.itunes.apple.com,{{ cdn_rule }}
 DOMAIN-SUFFIX,hls-amt.itunes.apple.com
+
 #iTunes Store 音乐试听
 DOMAIN-SUFFIX,audio-ssl.itunes.apple.com
+
 #iTunes Store 购买后播放
 DOMAIN-SUFFIX,streamingaudio.itunes.apple.com
 DOMAIN,streamingaudio.itunes.apple.com,{{ cdn_rule }}
+
 #iCloud 资料库上传
 DOMAIN-SUFFIX,amazonaws.com
+
 #页面：歌曲、歌单、艺人、专辑、MV - 外区
 DOMAIN-SUFFIX,music.apple.com
 DOMAIN-SUFFIX,music.apple.com,{{ api_rule }}
 #DOMAIN-SUFFIX,sonos-music.apple.com,{{ api_rule }}
+
 #Apple Music 歌曲播放
 #DOMAIN,aod.itunes.apple.com,{{ cdn_rule }}
