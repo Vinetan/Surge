@@ -27,7 +27,7 @@ DOMAIN-SUFFIX,streamingaudio.itunes.apple.com
 DOMAIN-SUFFIX,amazonaws.com
 
 #页面：歌曲、歌单、艺人、专辑、MV - 外区
-#DOMAIN-SUFFIX,music.apple.com
+DOMAIN-SUFFIX,music.apple.com
 #DOMAIN-SUFFIX,music.apple.com,{{ api_rule }}
 #DOMAIN-SUFFIX,sonos-music.apple.com,{{ api_rule }}
 
