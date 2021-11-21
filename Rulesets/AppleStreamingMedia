@@ -12,9 +12,9 @@ DOMAIN-SUFFIX,aodp-ssl.apple.com
 DOMAIN-SUFFIX,video-ssl.itunes.apple.com
 
 #MV、电视、电影正片、动态封面（疑似）
-DOMAIN-SUFFIX,mvod.itunes.apple.com
+#DOMAIN-SUFFIX,mvod.itunes.apple.com
 #DOMAIN,mvod.itunes.apple.com,{{ cdn_rule }}
-DOMAIN-SUFFIX,hls-amt.itunes.apple.com
+#DOMAIN-SUFFIX,hls-amt.itunes.apple.com
 
 #iTunes Store 音乐试听
 DOMAIN-SUFFIX,audio-ssl.itunes.apple.com
