@@ -29,7 +29,7 @@ const AREA_TEST_FILM_ID = 80018499
 	    result['icon-color'] = '#1B813E'
       //result['icon'] = params.icon1
 	    //result['icon-color'] = params.color1
-      result['content'] = 'You can watch Full Netflix \nUnlocked Country:' + code.toUpperCase()
+      result['content'] = 'You can watch Full Netflix \nUnlocked:' + code.toUpperCase()
       return Promise.reject('BreakSignal')
     })
     .then((code) => {
@@ -41,7 +41,7 @@ const AREA_TEST_FILM_ID = 80018499
 	    result['icon-color'] = "#EFBB24"
       //result['icon'] = params.icon2
 	    //result['icon-color'] = params.color2
-      result['content'] = 'Only watch Original Series in Netflix is supported\nUnlocked Country:' + code.toUpperCase()
+      result['content'] = 'Only watch Original Series in Netflix is supported\nUnlocked:' + code.toUpperCase()
       return Promise.reject('BreakSignal')
     })
     .catch((error) => {
@@ -51,7 +51,7 @@ const AREA_TEST_FILM_ID = 80018499
 	      result['icon-color'] = "#CB1B45"
         //result['icon'] = params.icon3
 	      //result['icon-color'] = params.color3
-        result['content'] = 'No support for this IP in Netflix'
+        result['content'] = 'Not support for this IP in Netflix'
         return
       }
     })
