@@ -17,7 +17,7 @@ const AREA_TEST_FILM_ID = 80018499
     title: "Netflix Rights Lock Check",
     icon: "exclamationmark.arrow.triangle.2.circlepath",
 	  'icon-color':"#77428D",
-    content: '检测失败，请检查网络状态',
+    content: 'Check Failed! Please checking your Network',
   }
   await test(FILM_ID)
     .then((code) => {
