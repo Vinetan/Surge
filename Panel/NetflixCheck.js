@@ -29,7 +29,7 @@ const AREA_TEST_FILM_ID = 80018499
 	    result['icon-color'] = '#1B813E'
       //result['icon'] = params.icon1
 	    //result['icon-color'] = params.color1
-      result['content'] = 'You can watch Full Netflix \nUnlocked : ' + code.toUpperCase()
+      result['content'] = 'You can watch Full Netflix \nUnlocked : '${getFlagEmoji(info.countryCode)} + code.toUpperCase()
       return Promise.reject('BreakSignal')
     })
     .then((code) => {
@@ -108,4 +108,13 @@ function getParams(param) {
       .map((item) => item.split("="))
       .map(([k, v]) => [k, decodeURIComponent(v)])
   );
+}
+
+// 获取国旗emoji
+function getFlagEmoji(countryCode) {
+  const codePoints = countryCode
+    .toUpperCase()
+    .split('')
+    .map((char) => 127397 + char.charCodeAt());
+  return String.fromCodePoint(...codePoints);
 }
