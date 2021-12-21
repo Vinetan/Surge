@@ -29,7 +29,7 @@ const AREA_TEST_FILM_ID = 80018499
 	    result['icon-color'] = '#1B813E'
       //result['icon'] = params.icon1
 	    //result['icon-color'] = params.color1
-      result['content'] = '目前 IP 可完整收看 Netflix 影剧\n解锁国家：' + code.toUpperCase()
+      result['content'] = 'You can watch Full Netflix \nLocked Country：' + code.toUpperCase()
       return Promise.reject('BreakSignal')
     })
     .then((code) => {
