@@ -58,6 +58,14 @@ const AREA_TEST_FILM_ID = 80018499
     .finally(() => {
       $done(result)
     })
+// 获取国旗emoji
+function getFlagEmoji(countryCode) {
+  const codePoints = countryCode
+    .toUpperCase()
+    .split('')
+    .map((char) => 127397 + char.charCodeAt());
+  return String.fromCodePoint(...codePoints);
+}
 })()
 
 function test(filmId) {
@@ -108,13 +116,4 @@ function getParams(param) {
       .map((item) => item.split("="))
       .map(([k, v]) => [k, decodeURIComponent(v)])
   );
-}
-
-// 获取国旗emoji
-function getFlagEmoji(countryCode) {
-  const codePoints = countryCode
-    .toUpperCase()
-    .split('')
-    .map((char) => 127397 + char.charCodeAt());
-  return String.fromCodePoint(...codePoints);
 }
