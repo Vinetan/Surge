@@ -14,7 +14,7 @@ const AREA_TEST_FILM_ID = 80018499
 
 ;(async () => {
   let result = {
-    title: "Netflix Rights IP Lock Check",
+    title: "Netflix Rights Lock Check",
     icon: "exclamationmark.arrow.triangle.2.circlepath",
 	  'icon-color':"#77428D",
     content: '检测失败，请检查网络状态',
@@ -24,7 +24,7 @@ const AREA_TEST_FILM_ID = 80018499
       if (code === 'Not Found') {
         return test(AREA_TEST_FILM_ID)
       }
-      result['Title'] ="Netflix Rights IP Lock Check"
+      result['Title'] ="Netflix Rights Lock Check"
       result['icon'] = "checkmark.circle"
 	    result['icon-color'] = '#1B813E'
       //result['icon'] = params.icon1
@@ -36,7 +36,7 @@ const AREA_TEST_FILM_ID = 80018499
       if (code === 'Not Found') {
         return Promise.reject('Not Available')
       }
-      result['Title'] ="Netflix Rights IP Lock Check"
+      result['Title'] ="Netflix Rights Lock Check"
       result['icon'] = "checkmark.circle.trianglebadge.exclamationmark"
 	    result['icon-color'] = "#EFBB24"
       //result['icon'] = params.icon2
@@ -46,7 +46,7 @@ const AREA_TEST_FILM_ID = 80018499
     })
     .catch((error) => {
       if (error === 'Not Available') {
-        result['Title'] ="Netflix Rights IP Lock Check"
+        result['Title'] ="Netflix Rights Lock Check"
         result['icon'] = "x.circle"
 	      result['icon-color'] = "#CB1B45"
         //result['icon'] = params.icon3
