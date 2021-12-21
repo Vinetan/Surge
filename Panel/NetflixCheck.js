@@ -51,7 +51,7 @@ const AREA_TEST_FILM_ID = 80018499
 	      result['icon-color'] = "#CB1B45"
         //result['icon'] = params.icon3
 	      //result['icon-color'] = params.color3
-        result['content'] = 'Netflix 不为此 IP 提供服务'
+        result['content'] = 'No support for this IP in Netflix'
         return
       }
     })
