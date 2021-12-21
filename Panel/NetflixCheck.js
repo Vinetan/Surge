@@ -29,7 +29,7 @@ const AREA_TEST_FILM_ID = 80018499
 	    result['icon-color'] = '#1B813E'
       //result['icon'] = params.icon1
 	    //result['icon-color'] = params.color1
-      result['content'] = 'You can watch Full Netflix \nUnlocked : '${getFlagEmoji(info.countryCode)} + code.toUpperCase()
+      result['content'] = 'You can watch Full Netflix \nUnlocked : ${getFlagEmoji(info.countryCode)} ' + code.toUpperCase()
       return Promise.reject('BreakSignal')
     })
     .then((code) => {
