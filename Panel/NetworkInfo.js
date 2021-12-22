@@ -75,7 +75,7 @@ function getNetworkInfo() {
 
     const info = JSON.parse(data);
     $done({
-      title: wifi.ssid ? wifi.ssid : '蜂窝网络' + carrierName,
+      title: wifi.ssid ? wifi.ssid : 'Cellular Network' + carrierName,
       content:
         (v4.primaryAddress ? `IPv4 : ${v4.primaryAddress} \n` : '') +
         (v6.primaryAddress ? `IPv6 : ${v6.primaryAddress}\n` : '') +
