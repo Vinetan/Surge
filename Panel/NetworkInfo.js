@@ -50,7 +50,7 @@ if (!v4.primaryAddress && !v6.primaryAddress) {
   });
 } else {
   if (!wifi.ssid) {
-    $httpClient.get(['https://ipapi.co/asn',httpClient.get], function (error, response, data) {
+    $httpClient.get('https://ipapi.co/asn', function (error, response, data) {
       if (error) {
         return;
       }
@@ -63,7 +63,7 @@ if (!v4.primaryAddress && !v6.primaryAddress) {
 }
 
 function getNetworkInfo() {
-  $httpClient.get('http://ip-api.com/json', function (error, response, data) {
+  $httpClient.get(['http://ip-api.com/json','http://edns.ip-api.com/json'], function (error, response, data) {
     if (error) {
       $done({
         title: '发生错误',
@@ -86,7 +86,7 @@ function getNetworkInfo() {
           ? `Router IPv6 : ${v6.primaryRouter}\n`
           : '') +
         `Foreign IP : ${info.query}\n` +
-        `Domestic IP : ${info.${dns.ip}}\n` +
+        `Domestic IP : ${info.dns.ip}\n` +
         `ISP : ${info.isp}\n` +
         `Region : ${getFlagEmoji(info.countryCode)} - ${info.city}`,
       icon: wifi.ssid ? 'wifi.circle' : 'antenna.radiowaves.left.and.right.circle',
