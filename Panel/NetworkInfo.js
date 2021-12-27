@@ -85,9 +85,10 @@ function getNetworkInfo() {
         (v6.primaryRouter && wifi.ssid
           ? `Router IPv6 : ${v6.primaryRouter}\n`
           : '') +
-        `External IP : ${info.query}\n` +
+        `Foreign IP : ${info.query}\n` +
+        `Domestic IP : ${info.dns.ip}\n` +
         `ISP : ${info.isp}\n` +
-        `Location : ${getFlagEmoji(info.countryCode)} - ${info.city}`,
+        `Region : ${getFlagEmoji(info.countryCode)} - ${info.city}`,
       icon: wifi.ssid ? 'wifi.circle' : 'antenna.radiowaves.left.and.right.circle',
       'icon-color': wifi.ssid ? '0A60FF' : '#F9BF45',
     });
