@@ -72,16 +72,6 @@ function getNetworkInfo() {
         'icon-color': '#CB1B45',
       });
     }
-     
-//   $httpClient.get('http://edns.ip-api.com/json', function (error, response, data) {
-//     if (error) {
-//       $done({
-//         title: '发生错误',
-//         content: '无法获得目前网络信息\n请检查网络设备状态后重试',
-//         icon: 'wifi.exclamationmark',
-//         'icon-color': '#CB1B45',
-//       });
-//     }
 
     const info = JSON.parse(data);
     $done({
@@ -96,7 +86,7 @@ function getNetworkInfo() {
           ? `Router IPv6 : ${v6.primaryRouter}\n`
           : '') +
         `Foreign IP : ${info.query}\n` +
-        `Domestic IP : ${info.dns.ip}\n` +
+        `Domestic IP : ${info.status}\n` +
         `ISP : ${info.isp}\n` +
         `Region : ${getFlagEmoji(info.countryCode)} - ${info.city}`,
       icon: wifi.ssid ? 'wifi.circle' : 'antenna.radiowaves.left.and.right.circle',
