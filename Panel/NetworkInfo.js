@@ -73,7 +73,6 @@ function getNetworkInfo() {
       });
     }
      
-function getNetworkDNSInfo() {
   $httpClient.get('http://edns.ip-api.com/json', function (error, response, data) {
     if (error) {
       $done({
