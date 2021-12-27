@@ -73,15 +73,15 @@ function getNetworkInfo() {
       });
     }
      
-  $httpClient.get('http://edns.ip-api.com/json', function (error, response, data) {
-    if (error) {
-      $done({
-        title: '发生错误',
-        content: '无法获得目前网络信息\n请检查网络设备状态后重试',
-        icon: 'wifi.exclamationmark',
-        'icon-color': '#CB1B45',
-      });
-    }
+//   $httpClient.get('http://edns.ip-api.com/json', function (error, response, data) {
+//     if (error) {
+//       $done({
+//         title: '发生错误',
+//         content: '无法获得目前网络信息\n请检查网络设备状态后重试',
+//         icon: 'wifi.exclamationmark',
+//         'icon-color': '#CB1B45',
+//       });
+//     }
 
     const info = JSON.parse(data);
     $done({
