@@ -63,7 +63,7 @@ if (!v4.primaryAddress && !v6.primaryAddress) {
 }
 
 function getNetworkInfo() {
-  $httpClient.get('http://ip-api.com/json', function (error, response, data) {
+  $httpClient.get('http://ip-api.com/json','http://edns.ip-api.com/json', function (error, response, data) {
     if (error) {
       $done({
         title: '发生错误',
