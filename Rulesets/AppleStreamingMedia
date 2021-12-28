@@ -34,5 +34,5 @@ DOMAIN-SUFFIX,amazonaws.com
 #Apple Music 歌曲播放
 #DOMAIN,aod.itunes.apple.com,{{ cdn_rule }}
 
-#Apple Developer Media
-// DOMAIN,devstreaming-cdn.apple.com
+# Apple Developer Media
+DOMAIN,devstreaming-cdn.apple.com
