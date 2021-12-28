@@ -74,7 +74,7 @@
          (v6.primaryRouter && wifi.ssid ? `Router IPv6 : ${v6.primaryRouter}\n` : '') +
          `Foreign IP : ${info.query}\n` +
          `ISP : ${info.isp}\n` +
-         `Region : ${getFlagEmoji(info.countryCode)} | ${info.country} - ${info.city
+         `Region : ${getFlagEmoji(info.countryCode)} - ${info.city
          }`,
        icon: wifi.ssid ? 'wifi.circle' : 'antenna.radiowaves.left.and.right.circle',
        'icon-color': wifi.ssid ? '#007aff' : '#1B813E',
