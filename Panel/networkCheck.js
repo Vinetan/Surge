@@ -76,8 +76,8 @@
          `节点 ISP : ${info.isp}\n` +
          `节点 位置 : ${getFlagEmoji(info.countryCode)} | ${info.country} - ${info.city
          }`,
-       icon: wifi.ssid ? 'wifi' : 'simcard',
-       'icon-color': wifi.ssid ? '#005CAF' : '#F9BF45',
+       icon: wifi.ssid ? 'wifi.circle' : 'antenna.radiowaves.left.and.right.circle',
+       'icon-color': wifi.ssid ? '#007aff' : '#1B813E',
      });
    });
  }
