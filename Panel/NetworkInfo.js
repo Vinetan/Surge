@@ -10,17 +10,13 @@
 #!name=Network Info Panel
 #!desc=網路詳情面板測試版 @Nebulosa-Cat
 #!system=ios
-
 [Panel]
 NetInfoPanel=title="",content="",style=info,script-name=net-info-panel.js,update-interval=1
-
 [Script]
 net-info-panel.js=script-path=https://raw.githubusercontent.com/Vinetan/Surge/main/Panel/NetworkInfo.js,type=generic
-
 [Host]
 ip-api.com = 208.95.112.1
 ipapi.co = 172.67.69.226
-
 [Rule]
 DOMAIN,ipapi.co,DIRECT
 */
@@ -50,7 +46,7 @@ if (!v4.primaryAddress && !v6.primaryAddress) {
   });
 } else {
   if (!wifi.ssid) {
-    $httpClient.get('http://ip-api.com/json', function (error, response, data) {
+    $httpClient.get('https://ipapi.co/asn', function (error, response, data) {
       if (error) {
         return;
       }
@@ -63,7 +59,7 @@ if (!v4.primaryAddress && !v6.primaryAddress) {
 }
 
 function getNetworkInfo() {
-  $httpClient.get(('http://ip-api.com/json','http://edns.ip-api.com/json'), function (error, response, data) {
+  $httpClient.get('http://ip-api.com/json', function (error, response, data) {
     if (error) {
       $done({
         title: '发生错误',
@@ -85,10 +81,9 @@ function getNetworkInfo() {
         (v6.primaryRouter && wifi.ssid
           ? `Router IPv6 : ${v6.primaryRouter}\n`
           : '') +
-        `Foreign IP : ${info.query}\n` +
-        `Domestic IP : ${info.continent}\n` +
+        `External IP : ${info.query}\n` +
         `ISP : ${info.isp}\n` +
-        `Region : ${getFlagEmoji(info.countryCode)} - ${info.city}`,
+        `Location : ${getFlagEmoji(info.countryCode)} - ${info.city}`,
       icon: wifi.ssid ? 'wifi.circle' : 'antenna.radiowaves.left.and.right.circle',
       'icon-color': wifi.ssid ? '0A60FF' : '#F9BF45',
     });
