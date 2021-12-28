@@ -33,3 +33,6 @@ DOMAIN-SUFFIX,amazonaws.com
 
 #Apple Music 歌曲播放
 #DOMAIN,aod.itunes.apple.com,{{ cdn_rule }}
+
+#Apple Developer Meade
+#DOMAIN,devstreaming-cdn.apple.com
