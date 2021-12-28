@@ -82,7 +82,7 @@ function getNetworkInfo() {
           ? `Router IPv6 : ${v6.primaryRouter}\n`
           : '') +
         `Foreign IP : ${info.query}\n` +
-        `omestic IP : ${info.nds.ip}\n` +
+        `Domestic IP : ${info.nds.ip}\n` +
         `ISP : ${info.isp}\n` +
         `Location : ${getFlagEmoji(info.countryCode)} - ${info.city}`,
       icon: wifi.ssid ? 'wifi.circle' : 'antenna.radiowaves.left.and.right.circle',
