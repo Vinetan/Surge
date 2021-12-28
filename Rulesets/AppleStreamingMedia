@@ -35,4 +35,4 @@ DOMAIN-SUFFIX,amazonaws.com
 #DOMAIN,aod.itunes.apple.com,{{ cdn_rule }}
 
 # Apple Developer Media
-DOMAIN,devstreaming-cdn.apple.com
+// DOMAIN,devstreaming-cdn.apple.com
