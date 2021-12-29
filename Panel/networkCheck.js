@@ -54,7 +54,7 @@
          '蜂窝数据 - ' + radioGeneration[radio] + ' (' + radio + ')';
      }
    }
-   $httpClient.get('http://ip-api.com/json', function (error, response, data) {
+   $httpClient.get(['http://ip-api.com/json','http://edns.ip-api.com/json'], function (error, response, data) {
      if (error) {
        $done({
          title: '发生错误',
