@@ -38,7 +38,7 @@ Sub_info = script-name=Sub_info,update-interval=600
   let content = [`Traffic : ${bytesToSize(used)} | ${bytesToSize(total)}`];
 
   if (resetDayLeft) {
-    content.push(`Reset Day : Left ${resetDayLeft} Day`);
+    content.push(`Reset Day : Left ${resetDayLeft} Days`);
   }
   if (expire) {
     if (/^[\d.]+$/.test(expire)) expire *= 1000;
