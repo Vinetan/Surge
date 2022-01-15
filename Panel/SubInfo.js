@@ -55,7 +55,7 @@ Sub_info = script-name=Sub_info,update-interval=600
     title: `${args.title} | ${hour}:${minutes}`,
     content: content.join("\n"),
     icon: args.icon || "airplane.circle",
-    "icon-render": args.render || original,
+    "icon-render": args.renderingMode || .original,
 //    "icon-color": args.color || "#007aff",
   });
 })();
