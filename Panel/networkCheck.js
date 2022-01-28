@@ -39,8 +39,8 @@
  
  if (!v4.primaryAddress && !v6.primaryAddress) {
    $done({
-     title: '没有网络',
-     content: '尚未连接网络\n请检查网络后重试',
+     title: 'No Network',
+     content: 'Network is not connect\nPlease check the network try again',
      icon: 'wifi.exclamationmark',
      'icon-color': '#CB1B45',
    });
@@ -57,8 +57,8 @@
    $httpClient.get('http://ip-api.com/json', function (error, response, data) {
      if (error) {
        $done({
-         title: '发生错误',
-         content: '无法获得目前网络资讯\n请检查网络状态后重试',
+         title: 'Eero',
+         content: 'Can\'t get current network info\nPlease check the network try again',
          icon: 'wifi.exclamationmark',
          'icon-color': '#CB1B45',
        });
