@@ -12,6 +12,6 @@ DOMAIN-SUFFIX,twimg.com
 DOMAIN-KEYWORD,blogspot
 
 DOMAIN-SUFFIX,exitgames.com
-DOMAIN,macosicons.com
-DOMAIN,music.apple.com/replay
-DOMAIN,replay.music.apple.com
+DOMAIN-SUFFIX,macosicons.com
+DOMAIN-SUFFIX,music.apple.com/replay
+DOMAIN-SUFFIX,replay.music.apple.com
