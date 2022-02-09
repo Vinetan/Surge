@@ -1,4 +1,4 @@
-DOMAIN,douban.com
-DOMAIN,aliyundrive.com
-DOMAIN,gwifi.com
-DOMAIN,seagm.com
+DOMAIN-SUFFIX,douban.com
+DOMAIN-SUFFIX,aliyundrive.com
+DOMAIN-SUFFIX,gwifi.com
+DOMAIN-SUFFIX,seagm.com
