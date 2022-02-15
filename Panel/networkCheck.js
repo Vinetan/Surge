@@ -57,7 +57,7 @@
    $httpClient.get('http://ip-api.com/json', function (error, response, data) {
      if (error) {
        $done({
-         title: 'Eero',
+         title: 'Error',
          content: 'Can\'t get current network info\nPlease check the network try again',
          icon: 'wifi.exclamationmark',
          'icon-color': '#CB1B45',
