@@ -1,2 +1,2 @@
-#拦截垃圾微信DNS
+#Reject fuck Wechat DNS
 DOMAIN-SUFFIX,dns.weixin.qq.com
