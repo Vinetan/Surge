@@ -1,16 +1,3 @@
-## 抗 DNS 污染
-// DOMAIN-KEYWORD,amazon
-// DOMAIN-KEYWORD,google
-// DOMAIN-KEYWORD,gmail
-// DOMAIN-KEYWORD,facebook
-// DOMAIN-SUFFIX,fb.me
-// DOMAIN-SUFFIX,fbcdn.net
-// DOMAIN-KEYWORD,twitter
-// DOMAIN-KEYWORD,instagram
-// DOMAIN-KEYWORD,dropbox
-// DOMAIN-SUFFIX,twimg.com
-// DOMAIN-KEYWORD,blogspot
-
 DOMAIN-SUFFIX,exitgames.com
 DOMAIN-SUFFIX,macosicons.com
 DOMAIN-SUFFIX,music.apple.com/replay
