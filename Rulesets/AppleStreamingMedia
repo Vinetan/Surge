@@ -36,3 +36,6 @@ DOMAIN-SUFFIX,amazonaws.com
 
 # Apple Developer Media
 DOMAIN-SUFFIX,devstreaming-cdn.apple.com
+
+#Year Review
+DOMAIN-SUFFIX,music.apple.com/replay
