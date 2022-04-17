@@ -2,6 +2,8 @@ DOMAIN-SUFFIX,douban.com
 DOMAIN-SUFFIX,aliyundrive.com
 DOMAIN-SUFFIX,gwifi.com
 DOMAIN-SUFFIX,seagm.com
+
+// Apple
 DOMAIN,download.developer.apple.com
 DOMAIN,hls-svod-aoc.itunes.apple.com
 DOMAIN,play-edge.itunes.apple.com
