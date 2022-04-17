@@ -5,5 +5,5 @@ DOMAIN-SUFFIX,seagm.com
 
 // Apple
 DOMAIN,download.developer.apple.com
-DOMAIN,hls-svod-aoc.itunes.apple.com
-DOMAIN,play-edge.itunes.apple.com
+// DOMAIN,hls-svod-aoc.itunes.apple.com
+// DOMAIN,play-edge.itunes.apple.com
