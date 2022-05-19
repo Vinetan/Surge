@@ -11,3 +11,6 @@ DOMAIN,download.developer.apple.com
 
 // FaceTime
 DOMAIN-SUFFIX,facetime.apple.com
+
+// WeGmae
+DOMAIN-SUFFIX,wegamex.com
