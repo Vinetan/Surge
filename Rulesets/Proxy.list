@@ -2,3 +2,6 @@
 // DOMAIN-SUFFIX,macosicons.com
 // DOMAIN,devstreaming-cdn.apple.com
 DOMAIN-SUFFIX,duolingo.com
+
+// Apple Map
+DOMAIN,gspe*-ssl.ls.apple.com
