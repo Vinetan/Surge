@@ -9,6 +9,9 @@ DOMAIN,download.developer.apple.com
 DOMAIN,hls-svod-aoc.itunes.apple.com
 // DOMAIN,play-edge.itunes.apple.com
 
+// Apple DoH
+DOMAIN-SUFFIX,doh.dns.apple.com
+
 // FaceTime
 DOMAIN-SUFFIX,facetime.apple.com
 
