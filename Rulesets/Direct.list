@@ -12,6 +12,9 @@ DOMAIN,hls-svod-aoc.itunes.apple.com
 // Apple DoH
 DOMAIN-SUFFIX,doh.dns.apple.com
 
+// Apple Mac App store
+DOMAIN-SUFFIX,osxapps.itunes.apple.com
+
 // FaceTime
 DOMAIN-SUFFIX,facetime.apple.com
 
