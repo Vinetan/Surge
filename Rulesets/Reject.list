@@ -1,6 +1,6 @@
 // 联通 DNS Reject
-IP-CIDR,221.3.131.11
-IP-CIDR,221.3.131.12
+// IP-CIDR,221.3.131.11
+// IP-CIDR,221.3.131.12
 
 // Airbuddy App
 DOMAIN-SUFFIX,assets.airbuddy.app
