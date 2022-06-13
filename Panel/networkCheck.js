@@ -56,14 +56,14 @@ if (!v4.primaryAddress && !v6.primaryAddress) {
     $done({
       title: wifi.ssid ? wifi.ssid : cellularInfo,
       content:
-        `IP Address\n` +
-        (v4.primaryAddress ? `v4 @ ${v4.primaryAddress} \n` : '') +
-        (v6.primaryAddress ? `v6 @ ${v6.primaryAddress}\n` : '') +
-        (v4.primaryRouter && wifi.ssid ? `Router v4 @ ${v4.primaryRouter}\n` : '') +
-        (v6.primaryRouter && wifi.ssid ? `Router IPv6 @ ${v6.primaryRouter}\n` : '') +
-        `Foreign IP ${info.query}\n` +
-        `ISP ${info.isp}\n` +
-        `Region ${getFlagEmoji(info.countryCode)} ${info.country} - ${info.city
+        `IP Address\n:` +
+        (v4.primaryAddress ? `v4: ${v4.primaryAddress} \n` : '') +
+        (v6.primaryAddress ? `v6: ${v6.primaryAddress}\n` : '') +
+        (v4.primaryRouter && wifi.ssid ? `Router v4: ${v4.primaryRouter}\n` : '') +
+        (v6.primaryRouter && wifi.ssid ? `Router IPv6: ${v6.primaryRouter}\n` : '') +
+        `Foreign IP: ${info.query}\n` +
+        `ISP: ${info.isp}\n` +
+        `Region: ${getFlagEmoji(info.countryCode)} ${info.country} - ${info.city
         }`,
       icon: wifi.ssid ? 'wifi.circle' : 'antenna.radiowaves.left.and.right.circle',
       'icon-color': wifi.ssid ? '#007aff' : '#1B813E',
