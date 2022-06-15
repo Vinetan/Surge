@@ -29,3 +29,6 @@ DOMAIN-SUFFIX,download.epicgames.com
 
 // Duolingo
 // DOMAIN-SUFFIX,duolingo.com
+
+// iMessage
+DOMAIN,gateway.icloud.com:443
