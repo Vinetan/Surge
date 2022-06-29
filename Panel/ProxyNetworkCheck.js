@@ -21,8 +21,8 @@
   $httpClient.get('http://ip-api.com/json', function (error, response, data) {
       const jsonData = JSON.parse(data);
       $done({
-        title:rootName,
-        content: `𝗢𝗿𝗴 ：${jsonData.org}\n` + `𝗟𝗼𝗰𝗮𝘁𝗶𝗼𝗻 ：${jsonData.country} - ${jsonData.city}\n` + `𝗜𝗣 ：${jsonData.query}\n` + `𝗜𝗦𝗣 ：${jsonData.isp}`,
+        title: rootName,
+        content: `𝗟𝗼𝗰𝗮𝘁𝗶𝗼𝗻 ：${jsonData.country} - ${jsonData.city}\n` + `𝗜𝗣 ：${jsonData.query}\n` + `𝗜𝗦𝗣 ：${jsonData.isp}`,
         icon: params.icon,
         "icon-color":params.color
       });
