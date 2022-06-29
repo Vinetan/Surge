@@ -61,7 +61,7 @@ Sub_info = script-name=Sub_info,update-interval=86400
       title: `${args.title} ` + `𝗹 𝗥𝗲𝘀𝗲𝘁 : ` + `${resetDayLeft} 𝗗𝗮𝘆𝘀`,
       content: content.join("\n"),
       icon: args.icon || "airplane.circle",
-      "icon-color": args.color || "#007aff",
+      "icon-color": args.color || "#3378f6",
     });
   })();
   

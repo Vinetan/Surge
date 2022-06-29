@@ -58,7 +58,7 @@ if (!v4.primaryAddress && !v6.primaryAddress) {
       content:
         (v4.primaryAddress ? `𝗜𝗣𝘃𝟰: ${v4.primaryAddress}` : ''),
       icon: wifi.ssid ? 'wifi.circle' : 'antenna.radiowaves.left.and.right.circle',
-      'icon-color': wifi.ssid ? '#007aff' : '#1B813E',
+      'icon-color': wifi.ssid ? '#3378f6' : '#75d671',
     });
   });
 }

@@ -26,7 +26,7 @@ const { wifi, v4, v6 } = $network;
         title: rootName,
         content: `𝗜𝗣 ：${jsonData.query}\n` + `𝗜𝗦𝗣 ：${jsonData.isp}\n` + `𝗟𝗼𝗰𝗮𝘁𝗶𝗼𝗻 ：${jsonData.country} - ${jsonData.city}`,
         icon: params.icon,
-        'icon-color': wifi.ssid ? '#007aff' : '#1B813E'
+        'icon-color': wifi.ssid ? '#3378f6' : '#75d671'
       });
     });
   
