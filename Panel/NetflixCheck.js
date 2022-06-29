@@ -26,7 +26,7 @@ const AREA_TEST_FILM_ID = 80018499
       }
       result['Title'] ="𝗡𝗲𝘁𝗳𝗹𝗶𝘅 𝗥𝗶𝗴𝗵𝘁𝘀 𝗟𝗼𝗰𝗸 𝗖𝗵𝗲𝗰𝗸"
       result['icon'] = "checkmark.circle"
-	    result['icon-color'] = '#02611f'
+	    result['icon-color'] = '#1B813E'
       //result['icon'] = params.icon1
 	    //result['icon-color'] = params.color1
       result['content'] = '𝗬𝗼𝘂 𝗰𝗮𝗻 𝘄𝗮𝘁𝗰𝗵 𝗙𝘂𝗹𝗹 𝗡𝗲𝘁𝗳𝗹𝗶𝘅 𝗶𝗻 ' + code.toUpperCase()
