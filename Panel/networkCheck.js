@@ -56,7 +56,7 @@ if (!v4.primaryAddress && !v6.primaryAddress) {
     $done({
       title: wifi.ssid ? wifi.ssid : cellularInfo,
       content:
-        (v4.primaryAddress ? `𝗜𝗣𝘃𝟰: ${v4.primaryAddress} \n` : ''),
+        (v4.primaryAddress ? `𝗜𝗣𝘃𝟰: ${v4.primaryAddress}` : ''),
       icon: wifi.ssid ? 'wifi.circle' : 'antenna.radiowaves.left.and.right.circle',
       'icon-color': wifi.ssid ? '#007aff' : '#1B813E',
     });
