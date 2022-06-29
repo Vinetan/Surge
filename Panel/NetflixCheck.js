@@ -14,44 +14,44 @@ const AREA_TEST_FILM_ID = 80018499
 
 ;(async () => {
   let result = {
-    title: "Netflix Rights Lock Check",
+    title: "𝗡𝗲𝘁𝗳𝗹𝗶𝘅 𝗥𝗶𝗴𝗵𝘁𝘀 𝗟𝗼𝗰𝗸 𝗖𝗵𝗲𝗰𝗸",
     icon: "exclamationmark.arrow.triangle.2.circlepath",
 	  'icon-color':"#77428D",
-    content: 'Check Failed! Please checking your Network',
+    content: '𝗖𝗵𝗲𝗰𝗸 𝗙𝗮𝗶𝗹𝗲𝗱! 𝗣𝗹𝗲𝗮𝘀𝗲 𝗰𝗵𝗲𝗰𝗸𝗶𝗻𝗴 𝘆𝗼𝘂𝗿 𝗡𝗲𝘁𝘄𝗼𝗿𝗸',
   }
   await test(FILM_ID)
     .then((code) => {
       if (code === 'Not Found') {
         return test(AREA_TEST_FILM_ID)
       }
-      result['Title'] ="Netflix Rights Lock Check"
+      result['Title'] ="𝗡𝗲𝘁𝗳𝗹𝗶𝘅 𝗥𝗶𝗴𝗵𝘁𝘀 𝗟𝗼𝗰𝗸 𝗖𝗵𝗲𝗰𝗸"
       result['icon'] = "checkmark.circle"
 	    result['icon-color'] = '#1B813E'
       //result['icon'] = params.icon1
 	    //result['icon-color'] = params.color1
-      result['content'] = 'You can watch Full Netflix \nUnlocked : ' + code.toUpperCase()
+      result['content'] = '𝗬𝗼𝘂 𝗰𝗮𝗻 𝘄𝗮𝘁𝗰𝗵 𝗙𝘂𝗹𝗹 𝗡𝗲𝘁𝗳𝗹𝗶𝘅 𝗶𝗻 𝘁𝗵𝗲 ' + code.toUpperCase()
       return Promise.reject('BreakSignal')
     })
     .then((code) => {
       if (code === 'Not Found') {
         return Promise.reject('Not Available')
       }
-      result['Title'] ="Netflix Rights Lock Check"
+      result['Title'] ="𝗡𝗲𝘁𝗳𝗹𝗶𝘅 𝗥𝗶𝗴𝗵𝘁𝘀 𝗟𝗼𝗰𝗸 𝗖𝗵𝗲𝗰𝗸"
       result['icon'] = "checkmark.circle.trianglebadge.exclamationmark"
 	    result['icon-color'] = "#EFBB24"
       //result['icon'] = params.icon2
 	    //result['icon-color'] = params.color2
-      result['content'] = 'Only watch Original Series in Netflix is supported\nUnlocked : ' + code.toUpperCase()
+      result['content'] = '𝗬𝗼𝘂 𝗰𝗮𝗻 𝗼𝗻𝗹𝘆 𝘄𝗮𝘁𝗰𝗵 𝗡𝗲𝘁𝗳𝗹𝗶𝘅 𝗢𝗿𝗶𝗴𝗶𝗻𝗮𝗹 𝗦𝗲𝗿𝗶𝗲𝘀 𝗶𝗻 𝘁𝗵𝗲 ' + code.toUpperCase()
       return Promise.reject('BreakSignal')
     })
     .catch((error) => {
       if (error === 'Not Available') {
-        result['Title'] ="Netflix Rights Lock Check"
+        result['Title'] ="𝗡𝗲𝘁𝗳𝗹𝗶𝘅 𝗥𝗶𝗴𝗵𝘁𝘀 𝗟𝗼𝗰𝗸 𝗖𝗵𝗲𝗰𝗸"
         result['icon'] = "x.circle"
 	      result['icon-color'] = "#CB1B45"
         //result['icon'] = params.icon3
 	      //result['icon-color'] = params.color3
-        result['content'] = 'Not support for this IP in Netflix'
+        result['content'] = '𝗡𝗲𝘁𝗳𝗹𝗶𝘅 𝗱𝗼𝗲𝘀 𝗻𝗼𝘁 𝘀𝘂𝗽𝗽𝗼𝗿𝘁 𝘁𝗵𝗶𝘀 𝗜𝗣 𝗶𝗻 𝘁𝗵𝗲' + code.toUpperCase()
         return
       }
     })

@@ -8,27 +8,27 @@ const { wifi, v4, v6 } = $network;
 let cellularInfo = '';
 
 const radioGeneration = {
-  'GPRS': '2.5G',
-  'CDMA1x': '2.5G',
-  'EDGE': '2.75G',
-  'WCDMA': '3G',
-  'HSDPA': '3.5G',
-  'CDMAEVDORev0': '3.5G',
-  'CDMAEVDORevA': '3.5G',
-  'CDMAEVDORevB': '3.75G',
-  'HSUPA': '3.75G',
-  'eHRPD': '3.9G',
-  'LTE': '4G',
-  'NRNSA': '5G',
-  'NR': '5G',
+  '𝗚𝗣𝗥𝗦': '𝟮.𝟱𝗚',
+  '𝗖𝗗𝗠𝗔𝟭𝘅': '𝟮.𝟱𝗚',
+  '𝗘𝗗𝗚𝗘': '𝟮.𝟳𝟱𝗚',
+  '𝗪𝗖𝗗𝗠𝗔': '𝟯𝗚',
+  '𝗛𝗦𝗗𝗣𝗔': '𝟯.𝟱𝗚',
+  '𝗖𝗗𝗠𝗔𝗘𝗩𝗗𝗢𝗥𝗲𝘃𝟬': '𝟯.𝟱𝗚',
+  '𝗖𝗗𝗠𝗔𝗘𝗩𝗗𝗢𝗥𝗲𝘃𝗔': '𝟯.𝟱𝗚',
+  '𝗖𝗗𝗠𝗔𝗘𝗩𝗗𝗢𝗥𝗲𝘃𝗕': '𝟯.𝟳𝟱𝗚',
+  '𝗛𝗦𝗨𝗣𝗔': '𝟯.𝟳𝟱𝗚',
+  '𝗲𝗛𝗥𝗣𝗗': '𝟯.𝟵𝗚',
+  '𝗟𝗧𝗘': '𝟰𝗚',
+  '𝗡𝗥𝗡𝗦𝗔': '𝟱𝗚',
+  '𝗡𝗥': '𝟱𝗚',
 };
 
 const carrierNames = loadCarrierNames();
 
 if (!v4.primaryAddress && !v6.primaryAddress) {
   $done({
-    title: 'No Network',
-    content: 'Network is not connect\nPlease check the network try again',
+    title: '𝗡𝗼 𝗡𝗲𝘁𝘄𝗼𝗿𝗸',
+    content: '𝗡𝗲𝘁𝘄𝗼𝗿𝗸 𝗶𝘀 𝗻𝗼𝘁 𝗰𝗼𝗻𝗻𝗲𝗰𝘁\𝗻𝗣𝗹𝗲𝗮𝘀𝗲 𝗰𝗵𝗲𝗰𝗸 𝘁𝗵𝗲 𝗻𝗲𝘁𝘄𝗼𝗿𝗸 𝘁𝗿𝘆 𝗮𝗴𝗮𝗶𝗻',
     icon: 'wifi.exclamationmark',
     'icon-color': '#CB1B45',
   });
@@ -45,8 +45,8 @@ if (!v4.primaryAddress && !v6.primaryAddress) {
   $httpClient.get('http://ip-api.com/json', function (error, response, data) {
     if (error) {
       $done({
-        title: 'Error',
-        content: 'Can\'t get current network info\nPlease check the network try again',
+        title: '𝗘𝗿𝗿𝗼𝗿',
+        content: '𝗖𝗮𝗻\'𝘁 𝗴𝗲𝘁 𝗰𝘂𝗿𝗿𝗲𝗻𝘁 𝗻𝗲𝘁𝘄𝗼𝗿𝗸 𝗶𝗻𝗳𝗼\𝗻𝗣𝗹𝗲𝗮𝘀𝗲 𝗰𝗵𝗲𝗰𝗸 𝘁𝗵𝗲 𝗻𝗲𝘁𝘄𝗼𝗿𝗸 𝘁𝗿𝘆 𝗮𝗴𝗮𝗶𝗻',
         icon: 'wifi.exclamationmark',
         'icon-color': '#CB1B45',
       });
@@ -56,13 +56,13 @@ if (!v4.primaryAddress && !v6.primaryAddress) {
     $done({
       title: wifi.ssid ? wifi.ssid : cellularInfo,
       content:
-        (v4.primaryAddress ? `IPv4: ${v4.primaryAddress} \n` : '') +
-        (v6.primaryAddress ? `IPv6: ${v6.primaryAddress}\n` : '') +
-        (v4.primaryRouter && wifi.ssid ? `Router IPv4: ${v4.primaryRouter}\n` : '') +
-        (v6.primaryRouter && wifi.ssid ? `Router IPv6: ${v6.primaryRouter}\n` : '') +
-        `Foreign IP: ${info.query}\n` +
-        `ISP: ${info.isp}\n` +
-        `Region: ${getFlagEmoji(info.countryCode)} ${info.country} - ${info.city
+        (v4.primaryAddress ? `𝗜𝗣𝘃𝟰: ${v4.primaryAddress} \n` : '') +
+        (v6.primaryAddress ? `𝗜𝗣𝘃𝟲: ${v6.primaryAddress}\n` : '') +
+        (v4.primaryRouter && wifi.ssid ? `𝗥𝗼𝘂𝘁𝗲𝗿 𝗜𝗣𝘃𝟰: ${v4.primaryRouter}\n` : '') +
+        (v6.primaryRouter && wifi.ssid ? `𝗥𝗼𝘂𝘁𝗲𝗿 𝗜𝗣𝘃𝟲: ${v6.primaryRouter}\n` : '') +
+        `𝗙𝗼𝗿𝗲𝗶𝗴𝗻 𝗜𝗣: ${info.query}\n` +
+        `𝗜𝗦𝗣: ${info.isp}\n` +
+        `𝗥𝗲𝗴𝗶𝗼𝗻: ${getFlagEmoji(info.countryCode)} ${info.country} - ${info.city
         }`,
       icon: wifi.ssid ? 'wifi.circle' : 'antenna.radiowaves.left.and.right.circle',
       'icon-color': wifi.ssid ? '#007aff' : '#1B813E',
