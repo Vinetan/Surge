@@ -1,6 +1,8 @@
 /**
 * 感谢@fishingworld大佬的智慧，参考文件地址：https://github.com/fishingworld/something/blob/main/PanelScripts/net_info.js
 */
+const { wifi, v4, v6 } = $network;
+
 ;(async () => {
 
 
@@ -24,7 +26,7 @@
         title: rootName,
         content: `𝗜𝗣 ：${jsonData.query}\n` + `𝗜𝗦𝗣 ：${jsonData.isp}\n` + `𝗟𝗼𝗰𝗮𝘁𝗶𝗼𝗻 ：${jsonData.country} - ${jsonData.city}`,
         icon: params.icon,
-        "icon-color":params.color
+        'icon-color': wifi.ssid ? '#007aff' : '#1B813E'
       });
     });
   
