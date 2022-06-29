@@ -56,7 +56,7 @@ if (!v4.primaryAddress && !v6.primaryAddress) {
     $done({
       title: '𝗜𝗣𝘃𝟲 𝗖𝗵𝗲𝗰𝗸',
       content:
-        (v6.primaryAddress ? `𝗜𝗣𝘃𝟲: ${v6.primaryAddress}` : '𝗧𝗵𝗶𝘀 𝗡𝗲𝘁𝘄𝗼𝗿𝗸 𝗗𝗼𝗲𝘀 𝗡𝗼𝘁 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗜𝗣𝘃𝟲'),
+        (v6.primaryAddress ? `${v6.primaryAddress}` : `𝗧𝗵𝗶𝘀 𝗡𝗲𝘁𝘄𝗼𝗿𝗸 𝗗𝗼𝗲𝘀𝗻'𝘁 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗜𝗣𝘃𝟲`),
       icon: 'network',
       'icon-color': wifi.ssid ? '#007aff' : '#1B813E',
     });
