@@ -57,7 +57,7 @@ if (!v4.primaryAddress && !v6.primaryAddress) {
       title: wifi.ssid ? wifi.ssid : cellularInfo,
       content:
         (v4.primaryAddress ? `𝗜𝗣𝘃𝟰: ${v4.primaryAddress} \n` : '') +
-        (v6.primaryAddress ? `𝗜𝗣𝘃𝟲: ${v6.primaryAddress}` : ''),
+        (v6.primaryAddress ? `𝗜𝗣𝘃𝟲: ${v6.primaryAddress}` : 'Not Suport IPV6'),
       icon: wifi.ssid ? 'wifi.circle' : 'antenna.radiowaves.left.and.right.circle',
       'icon-color': wifi.ssid ? '#007aff' : '#1B813E',
     });

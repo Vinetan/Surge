@@ -22,7 +22,7 @@
       const jsonData = JSON.parse(data);
       $done({
         title:rootName,
-        content: `𝗢𝗿𝗴𝗮𝗻𝗶𝘇𝗮𝘁𝗶𝗼𝗻：${jsonData.org}\n` + `Location：${jsonData.country} - ${jsonData.city}\n` + `IP：${jsonData.query}\n` + `ISP：${jsonData.isp}`,
+        content: `𝗢𝗿𝗴 ：${jsonData.org}\n` + `𝗟𝗼𝗰𝗮𝘁𝗶𝗼𝗻 ：${jsonData.country} - ${jsonData.city}\n` + `𝗜𝗣 ：${jsonData.query}\n` + `𝗜𝗦𝗣 ：${jsonData.isp}`,
         icon: params.icon,
         "icon-color":params.color
       });
