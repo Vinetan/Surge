@@ -8,19 +8,19 @@ const { wifi, v4, v6 } = $network;
 let cellularInfo = '';
 
 const radioGeneration = {
-  '𝗚𝗣𝗥𝗦': '𝟮.𝟱𝗚',
-  '𝗖𝗗𝗠𝗔𝟭𝘅': '𝟮.𝟱𝗚',
-  '𝗘𝗗𝗚𝗘': '𝟮.𝟳𝟱𝗚',
-  '𝗪𝗖𝗗𝗠𝗔': '𝟯𝗚',
-  '𝗛𝗦𝗗𝗣𝗔': '𝟯.𝟱𝗚',
-  '𝗖𝗗𝗠𝗔𝗘𝗩𝗗𝗢𝗥𝗲𝘃𝟬': '𝟯.𝟱𝗚',
-  '𝗖𝗗𝗠𝗔𝗘𝗩𝗗𝗢𝗥𝗲𝘃𝗔': '𝟯.𝟱𝗚',
-  '𝗖𝗗𝗠𝗔𝗘𝗩𝗗𝗢𝗥𝗲𝘃𝗕': '𝟯.𝟳𝟱𝗚',
-  '𝗛𝗦𝗨𝗣𝗔': '𝟯.𝟳𝟱𝗚',
-  '𝗲𝗛𝗥𝗣𝗗': '𝟯.𝟵𝗚',
-  '𝗟𝗧𝗘': '𝟰𝗚',
-  '𝗡𝗥𝗡𝗦𝗔': '𝟱𝗚',
-  '𝗡𝗥': '𝟱𝗚',
+  'GPRS': '2.5G',
+  'CDMA1x': '2.5G',
+  'EDGE': '2.75G',
+  'WCDMA': '3G',
+  'HSDPA': '3.5G',
+  'CDMAEVDORev0': '3.5G',
+  'CDMAEVDORevA': '3.5G',
+  'CDMAEVDORevB': '3.75G',
+  'HSUPA': '3.75G',
+  'eHRPD': '3.9G',
+  'LTE': '4G',
+  'NRNSA': '5G',
+  'NR': '5G',
 };
 
 const carrierNames = loadCarrierNames();
