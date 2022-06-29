@@ -54,10 +54,10 @@ if (!v4.primaryAddress && !v6.primaryAddress) {
 
     const info = JSON.parse(data);
     $done({
-      title: wifi.ssid ? wifi.ssid : cellularInfo,
+      title: '𝗜𝗣𝘃𝟲 𝗖𝗵𝗲𝗰𝗸',
       content:
-        (v4.primaryAddress ? `𝗜𝗣𝘃𝟰: ${v4.primaryAddress} \n` : ''),
-      icon: wifi.ssid ? 'wifi.circle' : 'antenna.radiowaves.left.and.right.circle',
+        (v6.primaryAddress ? `𝗜𝗣𝘃𝟲: ${v6.primaryAddress}` : '𝗧𝗵𝗶𝘀 𝗡𝗲𝘁𝘄𝗼𝗿𝗸 𝗗𝗼𝗲𝘀 𝗡𝗼𝘁 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗜𝗣𝘃𝟲'),
+      icon: 'network',
       'icon-color': wifi.ssid ? '#007aff' : '#1B813E',
     });
   });
