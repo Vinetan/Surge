@@ -58,11 +58,6 @@ if (!v4.primaryAddress && !v6.primaryAddress) {
       content:
         (v4.primaryAddress ? `𝗜𝗣𝘃𝟰: ${v4.primaryAddress} \n` : '') +
         (v6.primaryAddress ? `𝗜𝗣𝘃𝟲: ${v6.primaryAddress}\n` : '') +
-        (v4.primaryRouter && wifi.ssid ? `𝗥𝗼𝘂𝘁𝗲𝗿 𝗜𝗣𝘃𝟰: ${v4.primaryRouter}\n` : '') +
-        (v6.primaryRouter && wifi.ssid ? `𝗥𝗼𝘂𝘁𝗲𝗿 𝗜𝗣𝘃𝟲: ${v6.primaryRouter}\n` : '') +
-        `𝗙𝗼𝗿𝗲𝗶𝗴𝗻 𝗜𝗣: ${info.query}\n` +
-        `𝗜𝗦𝗣: ${info.isp}\n` +
-        `𝗥𝗲𝗴𝗶𝗼𝗻: ${getFlagEmoji(info.countryCode)} ${info.country} - ${info.city
         }`,
       icon: wifi.ssid ? 'wifi.circle' : 'antenna.radiowaves.left.and.right.circle',
       'icon-color': wifi.ssid ? '#007aff' : '#1B813E',
