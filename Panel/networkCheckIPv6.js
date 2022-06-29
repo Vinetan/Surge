@@ -54,7 +54,7 @@ if (!v4.primaryAddress && !v6.primaryAddress) {
 
     const info = JSON.parse(data);
     $done({
-      title: '𝗜𝗣𝘃𝟲 𝗖𝗵𝗲𝗰𝗸',
+      title: '𝗜𝗣𝘃𝟲',
       content:
         (v6.primaryAddress ? `${v6.primaryAddress}` : `𝗧𝗵𝗶𝘀 𝗡𝗲𝘁𝘄𝗼𝗿𝗸 𝗗𝗼𝗲𝘀𝗻'𝘁 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗜𝗣𝘃𝟲`),
       icon: 'network',
