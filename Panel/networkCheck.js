@@ -194,8 +194,8 @@ function getNetworkInfo(retryTimes = 5, retryInterval = 1000) {
     $done({
       title: getSSID() ?? getCellularInfo(),
       content: getIP(),
-      icon: getSSID() ? 'wifi' : 'simcard',
-      'icon-color': getSSID() ? '#5A9AF9' : '#8AB8DD',
+      icon: wifi.ssid ? 'wifi.circle' : 'antenna.radiowaves.left.and.right.circle',
+      'icon-color': wifi.ssid ? '#007aff' : '#75d671',
     });
   }).catch(error => {
     // 网络切换
@@ -216,8 +216,8 @@ function getNetworkInfo(retryTimes = 5, retryInterval = 1000) {
       // 打印日志
       logger.error(error);
       $done({
-        title: '发生错误',
-        content: '无法获取当前网络信息\n请检查网络状态后重试',
+        title: '𝗘𝗿𝗿𝗼𝗿',
+        content: '𝗖𝗮𝗻\'𝘁 𝗴𝗲𝘁 𝗰𝘂𝗿𝗿𝗲𝗻𝘁 𝗻𝗲𝘁𝘄𝗼𝗿𝗸 𝗶𝗻𝗳𝗼\𝗻𝗣𝗹𝗲𝗮𝘀𝗲 𝗰𝗵𝗲𝗰𝗸 𝘁𝗵𝗲 𝗻𝗲𝘁𝘄𝗼𝗿𝗸 𝘁𝗿𝘆 𝗮𝗴𝗮𝗶𝗻',
         icon: 'wifi.exclamationmark',
         'icon-color': '#CB1B45',
       });
@@ -240,8 +240,8 @@ function getNetworkInfo(retryTimes = 5, retryInterval = 1000) {
   setTimeout(() => {
     logger.log("Script timeout");
     $done({
-      title: "请求超时",
-      content: "连接请求超时\n请检查网络状态后重试",
+      title: "𝗧𝗶𝗺𝗲 𝗼𝘂𝘁",
+      content: "𝗧𝗶𝗺𝗲 𝗼𝘂𝘁\𝗻𝗣𝗹𝗲𝗮𝘀𝗲 𝗰𝗵𝗲𝗰𝗸 𝘁𝗵𝗲 𝗻𝗲𝘁𝘄𝗼𝗿𝗸 𝘁𝗿𝘆 𝗮𝗴𝗮𝗶𝗻",
       icon: 'wifi.exclamationmark',
       'icon-color': '#CB1B45',
     });
