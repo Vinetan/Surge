@@ -40,15 +40,15 @@ const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (
  let disney_result=""
     if (status==STATUS_COMING) {
         //console.log(1)
-        disney_result="𝗗𝗶𝘀𝗲𝗻𝘆+ 𝙞𝙨 𝙘𝙤𝙢𝙞𝙣𝙜 𝙩𝙤 "+region.toUpperCase()
+        disney_result="𝗗𝗜𝗦𝗡𝗘𝗬+ 𝙞𝙨 𝙘𝙤𝙢𝙞𝙣𝙜 𝙩𝙤 "+region.toUpperCase()
       } else if (status==STATUS_AVAILABLE){
         //console.log(2)
         console.log(region)
-        disney_result="𝗗𝗶𝘀𝗲𝗻𝘆+ 𝗶𝘀 𝗮𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 𝗶𝗻 "+region.toUpperCase()
+        disney_result="𝗗𝗜𝗦𝗡𝗘𝗬+ 𝗶𝘀 𝗮𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 𝗶𝗻 "+region.toUpperCase()
         // console.log(result["Disney"])
       } else if (status==STATUS_NOT_AVAILABLE) {
         //console.log(3)
-        disney_result="𝗗𝗶𝘀𝗲𝗻𝘆+ 𝗱𝗼𝗲𝘀 𝗻𝗼𝘁 𝘀𝘂𝗽𝗼𝗿𝘁 𝘁𝗵𝗶𝘀 𝗜𝗣 𝗶𝗻 "+region.toUpperCase()
+        disney_result="𝗗𝗜𝗦𝗡𝗘𝗬+ 𝗱𝗼𝗲𝘀 𝗻𝗼𝘁 𝘀𝘂𝗽𝗼𝗿𝘁 𝘁𝗵𝗶𝘀 𝗜𝗣 𝗶𝗻 "+region.toUpperCase()
       } else if (status==STATUS_TIMEOUT) {
         disney_result="𝗙𝗮𝗶𝗹𝗲𝗱! 𝗣𝗹𝗲𝗮𝘀𝗲 𝗰𝗵𝗲𝗰𝗸 𝘆𝗼𝘂𝗿 𝗡𝗲𝘁𝘄𝗼𝗿𝗸"
       }
@@ -103,7 +103,7 @@ panel_result['content'] = content
         if (code === 'Not Available') {
           youtube_check_result += '𝗬𝗼𝘂𝗧𝘂𝗯𝗲 𝗣𝗿𝗲𝗺 𝗱𝗼𝗲𝘀 𝗻𝗼𝘁 𝘀𝘂𝗽𝗼𝗿𝘁 𝘁𝗵𝗶𝘀 𝗜𝗣 𝗶𝗻 ' + code.toUpperCase()
         } else {
-          youtube_check_result += '𝗬𝗼𝘂𝗧𝘂𝗯𝗲 𝗶𝘀 𝗮𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 𝗶𝗻 ' + code.toUpperCase()
+          youtube_check_result += '𝗬𝗼𝘂𝗧𝘂𝗯𝗲 𝗣𝗿𝗲𝗺𝗶𝘂𝗺 𝗶𝘀 𝗮𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 𝗶𝗻 ' + code.toUpperCase()
         }
       })
       .catch((error) => {
