@@ -7,6 +7,21 @@ const { wifi, v4, v6 } = $network;
 
 let cellularInfo = '';
 
+function getIP() {
+  const { v4, v6 } = $network;
+  let info = [];
+  if (!v4 && !v6) {
+    info = ['Network maybe broke', 'Please Refresh'];
+  } else {
+    if (v4?.primaryAddress) info.push(`IPv4 : ${v4?.primaryAddress}`);
+    if (v6?.primaryAddress) info.push(`IPv6 : Assigned`);
+    if (v4?.primaryRouter && getSSID()) info.push(`Rounter IP : ${v4?.primaryRouter}`);
+    if (v6?.primaryRouter && getSSID()) info.push(`IPv6 : Assigned`);
+  }
+  info = info.join("\n");
+  return info + "\n";
+}
+
 const radioGeneration = {
   'GPRS': '2.5G',
   'CDMA1x': '2.5G',
@@ -56,10 +71,9 @@ if (!v4.primaryAddress && !v6.primaryAddress) {
     $done({
       title: wifi.ssid ? wifi.ssid : cellularInfo,
       content:
-        (v4.primaryAddress ? `𝗜𝗣𝘃𝟰: ${v4.primaryAddress} \n` : '') +
-        (v6.primaryAddress ? `𝗜𝗣𝘃𝟲: ${v6.primaryAddress}` : ''),
-      icon: wifi.ssid ? 'wifi.circle' : 'antenna.radiowaves.left.and.right.circle',
-      'icon-color': wifi.ssid ? '#007aff' : '#75d671',
+        getIP(),
+        icon: wifi.ssid ? 'wifi.circle' : 'antenna.radiowaves.left.and.right.circle',
+        'icon-color': wifi.ssid ? '#007aff' : '#75d671',
     });
   });
 }
