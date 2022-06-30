@@ -17,7 +17,7 @@ if ($trigger == "button") {
 $done({
     title:"𝗦𝘂𝗿𝗴𝗲 𝗿𝘂𝗻𝗻𝗶𝗻𝗴 "+startTime,
     content:"𝗠𝗶𝘁𝗺:"+icon_status(mitm_status.enabled)+"  𝗥𝗲𝘄𝗿𝗶𝘁𝗲:"+icon_status(rewrite_status.enabled)+"  𝗦𝗰𝗿𝗶𝗽𝘁𝗶𝗻𝗴:"+icon_status(scripting_status.enabled),
-    icon: icon_s?"applelogo":"info.circle.fill",
+    icon: icon_s?"rotate.3d":"info.circle.fill",
    "icon-color":icon_s?"#f6c970":"#FF7500"
 });
 })();
