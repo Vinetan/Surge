@@ -195,7 +195,7 @@ function getNetworkInfo(retryTimes = 5, retryInterval = 1000) {
       title: getSSID() ?? getCellularInfo(),
       content: getIP(),
       icon: getSSID() ? 'wifi.circle' : 'antenna.radiowaves.left.and.right.circle',
-      'icon-color': wifi.ssid ? '#007aff' : '#75d671',
+      'icon-color': getSSID()? '#007aff' : '#75d671',
     });
   }).catch(error => {
     // 网络切换
