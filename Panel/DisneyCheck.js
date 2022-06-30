@@ -57,7 +57,7 @@
    notAvailableIcon: 'xmark.circle',
    notAvailableIconColor: '#CB1B45',
    notAvailableStyle: 'alert',
-   errorContent: '𝗖𝗵𝗲𝗰𝗸 𝗙𝗮𝗶𝗹𝗲𝗱! 𝗣𝗹𝗲𝗮𝘀𝗲 𝗰𝗵𝗲𝗰𝗸 𝘆𝗼𝘂𝗿 𝗡𝗲𝘁𝘄𝗼𝗿𝗸',
+   errorContent: '𝗙𝗮𝗶𝗹𝗲𝗱! 𝗣𝗹𝗲𝗮𝘀𝗲 𝗰𝗵𝗲𝗰𝗸 𝘆𝗼𝘂𝗿 𝗡𝗲𝘁𝘄𝗼𝗿𝗸',
    errorIcon: 'exclamationmark.arrow.triangle.2.circlepath',
    errorIconColor: '#77428D',
    errorStyle: 'error',
