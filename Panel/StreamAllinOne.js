@@ -96,18 +96,18 @@ panel_result['content'] = content
       })
     }
   
-    let youtube_check_result = 'YouTube: '
+    let youtube_check_result = ''
   
     await inner_check()
       .then((code) => {
         if (code === 'Not Available') {
-          youtube_check_result += '不支持解锁'
+          youtube_check_result += '𝗬𝗼𝘂𝗧𝘂𝗯𝗲 𝗣𝗿𝗲𝗺 𝗱𝗼𝗲𝘀 𝗻𝗼𝘁 𝘀𝘂𝗽𝗼𝗿𝘁 𝘁𝗵𝗶𝘀 𝗜𝗣 𝗶𝗻 ' + code.toUpperCase()
         } else {
-          youtube_check_result += '已解锁 ➟ ' + code.toUpperCase()
+          youtube_check_result += '𝗬𝗼𝘂 𝗰𝗮𝗻 𝘄𝗮𝘁𝗰𝗵 𝗬𝗼𝘂𝘁𝘂𝗯𝗲 𝗣𝗿𝗲𝗺 𝗶𝗻 ' + code.toUpperCase()
         }
       })
       .catch((error) => {
-        youtube_check_result += '检测失败，请刷新面板'
+        youtube_check_result += '𝗙𝗮𝗶𝗹𝗲𝗱! 𝗣𝗹𝗲𝗮𝘀𝗲 𝗰𝗵𝗲𝗰𝗸 𝘆𝗼𝘂𝗿 𝗡𝗲𝘁𝘄𝗼𝗿𝗸'
       })
   
     return youtube_check_result
@@ -152,14 +152,14 @@ panel_result['content'] = content
       })
     }
   
-    let netflix_check_result = 'Netflix: '
+    let netflix_check_result = ''
   
     await inner_check(81215567)
       .then((code) => {
         if (code === 'Not Found') {
           return inner_check(80018499)
         }
-        netflix_check_result += '已完整解锁 ➟ ' + code.toUpperCase()
+        netflix_check_result += '𝗬𝗼𝘂 𝗰𝗮𝗻 𝘄𝗮𝘁𝗰𝗵 𝗙𝘂𝗹𝗹 𝗡𝗲𝘁𝗳𝗹𝗶𝘅 𝗶𝗻 ' + code.toUpperCase()
         return Promise.reject('BreakSignal')
       })
       .then((code) => {
@@ -167,7 +167,7 @@ panel_result['content'] = content
           return Promise.reject('Not Available')
         }
   
-        netflix_check_result += '仅解锁自制剧 ➟ ' + code.toUpperCase()
+        netflix_check_result += '𝗬𝗼𝘂 𝗰𝗮𝗻 𝗼𝗻𝗹𝘆 𝘄𝗮𝘁𝗰𝗵 𝗡𝗲𝘁𝗳𝗹𝗶𝘅 𝗢𝗿𝗶𝗴𝗶𝗻𝗮𝗹 𝗶𝗻 ' + code.toUpperCase()
         return Promise.reject('BreakSignal')
       })
       .catch((error) => {
@@ -175,10 +175,10 @@ panel_result['content'] = content
           return
         }
         if (error === 'Not Available') {
-          netflix_check_result += '该节点不支持解锁'
+          netflix_check_result += '𝗡𝗲𝘁𝗳𝗹𝗶𝘅 𝗱𝗼𝗲𝘀 𝗻𝗼𝘁 𝘀𝘂𝗽𝗽𝗼𝗿𝘁 𝘁𝗵𝗶𝘀 𝗜𝗣 𝗶𝗻 ' + code.toUpperCase()
           return
         }
-        netflix_check_result += '检测失败，请刷新面板'
+        netflix_check_result += '𝗙𝗮𝗶𝗹𝗲𝗱! 𝗣𝗹𝗲𝗮𝘀𝗲 𝗰𝗵𝗲𝗰𝗸 𝘆𝗼𝘂𝗿 𝗡𝗲𝘁𝘄𝗼𝗿𝗸'
       })
   
     return netflix_check_result

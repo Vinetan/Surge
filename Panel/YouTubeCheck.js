@@ -24,7 +24,7 @@ const BASE_URL = 'https://www.youtube.com/premium'
       if (code === 'Not Available') {
         result['icon'] = 'x.circle'
         result['icon-color'] = "#CB1B45"
-        result['content'] = '𝗬𝗼𝘂𝗧𝘂𝗯𝗲 𝗣𝗿𝗲𝗺𝗶𝘂𝗺 𝗱𝗼𝗲𝘀 𝗻𝗼𝘁 𝘀𝘂𝗽𝗼𝗿𝘁 𝘁𝗵𝗶𝘀 𝗜𝗣 𝗶𝗻 ' + code
+        result['content'] = '𝗬𝗼𝘂𝗧𝘂𝗯𝗲 𝗣𝗿𝗲𝗺 𝗱𝗼𝗲𝘀 𝗻𝗼𝘁 𝘀𝘂𝗽𝗼𝗿𝘁 𝘁𝗵𝗶𝘀 𝗜𝗣 𝗶𝗻 ' + code
         return
       }
       result['icon'] = "checkmark.circle"
