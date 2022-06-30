@@ -29,7 +29,7 @@ const BASE_URL = 'https://www.youtube.com/premium'
       }
       result['icon'] = "checkmark.circle"
       result['icon-color'] = '#1B813E'
-      result['content'] = '𝗬𝗼𝘂 𝗰𝗮𝗻 𝘄𝗮𝘁𝗰𝗵 𝗬𝗼𝘂𝘁𝘂𝗯𝗲 𝗣𝗿𝗲 𝗶𝗻 ' + code
+      result['content'] = '𝗬𝗼𝘂 𝗰𝗮𝗻 𝘄𝗮𝘁𝗰𝗵 𝗬𝗼𝘂𝘁𝘂𝗯𝗲 𝗣𝗿𝗲𝗺 𝗶𝗻 ' + code
     })
     .finally(() => {
       $done(result)
