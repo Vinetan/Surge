@@ -1,6 +1,8 @@
 /**
  * @author Helge_0x00
  *
+ * https://gist.githubusercontent.com/Hyseen/729fc4c3ac28c3f2e7c4a832d81780f3/raw/58f1cc4894988525c6c1ef5e1474ebc26138674f/disney_check.js
+ * 
  * [Panel]
  * disney_check = script-name=disney_check,title=Disney+ 解锁检测,style=alert,content=请刷新面板,update-interval=1800
  *
