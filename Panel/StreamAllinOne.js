@@ -159,7 +159,7 @@ panel_result['content'] = content
         if (code === 'Not Found') {
           return inner_check(80018499)
         }
-        netflix_check_result += '𝗡𝗘𝗧𝗙𝗟𝗜𝗫 𝗶𝘀 𝗳𝘂𝗹𝗹𝘆 𝗮𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 𝗶𝗻 ' + code.toUpperCase()
+        netflix_check_result += '𝗡𝗘𝗧𝗙𝗟𝗜𝗫 𝗶𝘀 𝗙𝘂𝗹𝗹𝘆 𝗮𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 𝗶𝗻 ' + code.toUpperCase()
         return Promise.reject('BreakSignal')
       })
       .then((code) => {
