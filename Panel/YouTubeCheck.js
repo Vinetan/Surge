@@ -13,10 +13,10 @@ const BASE_URL = 'https://www.youtube.com/premium'
 
 ;(async () => {
   let result = {
-    title: 'YouTube Premium 解锁检测',
+    title: '𝗬𝗼𝘂𝗧𝘂𝗯𝗲 𝗣𝗿𝗲𝗺𝗶𝘂𝗺 𝗖𝗵𝗲𝗰𝗸',
     icon: 'exclamationmark.arrow.triangle.2.circlepath',
     'icon-color':"#77428D",
-    content: '检测失败，请检查网络状态',
+    content: '𝗖𝗵𝗲𝗰𝗸 𝗙𝗮𝗶𝗹𝗲𝗱! 𝗣𝗹𝗲𝗮𝘀𝗲 𝗰𝗵𝗲𝗰𝗸 𝘆𝗼𝘂𝗿 𝗡𝗲𝘁𝘄𝗼𝗿𝗸',
   }
 
   await test()
@@ -24,12 +24,12 @@ const BASE_URL = 'https://www.youtube.com/premium'
       if (code === 'Not Available') {
         result['icon'] = 'x.circle'
         result['icon-color'] = "#CB1B45"
-        result['content'] = '不支持解锁 YouTube Premium'
+        result['content'] = '𝗬𝗼𝘂𝗧𝘂𝗯𝗲 𝗣𝗿𝗲𝗺𝗶𝘂𝗺 𝗱𝗼𝗲𝘀 𝗻𝗼𝘁 𝘀𝘂𝗽𝗼𝗿𝘁 𝘁𝗵𝗶𝘀 𝗜𝗣 𝗶𝗻 ' + code
         return
       }
       result['icon'] = "checkmark.circle"
       result['icon-color'] = '#1B813E'
-      result['content'] = '支持解锁 YouTube Premium\n解锁国家：' + code
+      result['content'] = '𝗬𝗼𝘂 𝗰𝗮𝗻 𝘄𝗮𝘁𝗰𝗵 𝗬𝗼𝘂𝘁𝘂𝗯𝗲 𝗣𝗿𝗲𝗺𝗶𝘂𝗺 𝗶𝗻' + code
     })
     .finally(() => {
       $done(result)
