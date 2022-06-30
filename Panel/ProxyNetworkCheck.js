@@ -24,7 +24,7 @@ const { wifi, v4, v6 } = $network;
       const jsonData = JSON.parse(data);
       $done({
         title: rootName,
-        content: `𝗜𝗣 ：${jsonData.query}\n` + `𝗜𝗦𝗣 ：${jsonData.isp}\n` + `𝗟𝗼𝗰𝗮𝘁𝗶𝗼𝗻 ：${jsonData.country} - ${jsonData.city}`,
+        content: `𝗜𝗣 ：${jsonData.query}\n` + `𝗜𝗦𝗣 ：${jsonData.isp}\n` + `𝗟𝗼𝗰𝗮𝘁𝗶𝗼𝗻 ：${jsonData.countryCode} - ${jsonData.city}`,
         icon: params.icon,
         'icon-color': wifi.ssid ? '#007aff' : '#75d671'
       });
