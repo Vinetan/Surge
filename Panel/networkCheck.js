@@ -170,13 +170,13 @@ function getIP() {
   if (!v4 && !v6) {
     info = ['Network maybe broke', 'Please Refresh'];
   } else {
-    if (v4?.primaryAddress) info.push(`IPv4 : ${v4?.primaryAddress}`);
-    if (v6?.primaryAddress) info.push(`IPv6 : Assigned`);
-    if (v4?.primaryRouter && getSSID()) info.push(`RouterIP：${v4?.primaryRouter}`);
-    if (v6?.primaryRouter && getSSID()) info.push(`IPv6 : Assigned`);
+    if (v4?.primaryAddress) info.push(`𝗜𝗣𝘃𝟰 : ${v4?.primaryAddress}`);
+    if (v6?.primaryAddress) info.push(`𝗜𝗣𝘃𝟲 : 𝗔𝘀𝘀𝗶𝗴𝗻𝗲𝗱`);
+    if (v4?.primaryRouter && getSSID()) info.push(`𝗥𝗼𝘂𝘁𝗲𝗿𝗜𝗣 : ${v4?.primaryRouter}`);
+    if (v6?.primaryRouter && getSSID()) info.push(`𝗜𝗣𝘃𝟲 : 𝗔𝘀𝘀𝗶𝗴𝗻𝗲𝗱`);
   }
   info = info.join("\n");
-  return info + "\n";
+  return info + "";
 }
 
 /**
