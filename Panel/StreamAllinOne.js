@@ -44,7 +44,7 @@ const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (
       } else if (status==STATUS_AVAILABLE){
         //console.log(2)
         console.log(region)
-        disney_result="𝘆𝗼𝘂 𝗰𝗮𝗻 𝗰𝗮𝗻 𝘄𝗮𝘁𝗰𝗵 𝗗𝗶𝘀𝗻𝗲𝘆+ 𝗶𝗻 "+region.toUpperCase()
+        disney_result="𝘆𝗼𝘂 𝗰𝗮𝗻 𝘄𝗮𝘁𝗰𝗵 𝗗𝗶𝘀𝗻𝗲𝘆+ 𝗶𝗻 "+region.toUpperCase()
         // console.log(result["Disney"])
       } else if (status==STATUS_NOT_AVAILABLE) {
         //console.log(3)
@@ -103,7 +103,7 @@ panel_result['content'] = content
         if (code === 'Not Available') {
           youtube_check_result += '𝗬𝗼𝘂𝗧𝘂𝗯𝗲 𝗣𝗿𝗲𝗺 𝗱𝗼𝗲𝘀 𝗻𝗼𝘁 𝘀𝘂𝗽𝗼𝗿𝘁 𝘁𝗵𝗶𝘀 𝗜𝗣 𝗶𝗻 ' + code.toUpperCase()
         } else {
-          youtube_check_result += '𝘆𝗼𝘂 𝗰𝗮𝗻 𝗰𝗮𝗻 𝘄𝗮𝘁𝗰𝗵 𝗬𝗼𝘂𝘁𝘂𝗯𝗲 𝗣𝗿𝗲𝗺 𝗶𝗻 ' + code.toUpperCase()
+          youtube_check_result += '𝘆𝗼𝘂 𝗰𝗮𝗻 𝘄𝗮𝘁𝗰𝗵 𝗬𝗼𝘂𝘁𝘂𝗯𝗲 𝗣𝗿𝗲𝗺 𝗶𝗻 ' + code.toUpperCase()
         }
       })
       .catch((error) => {
@@ -159,7 +159,7 @@ panel_result['content'] = content
         if (code === 'Not Found') {
           return inner_check(80018499)
         }
-        netflix_check_result += '𝘆𝗼𝘂 𝗰𝗮𝗻 𝗰𝗮𝗻 𝘄𝗮𝘁𝗰𝗵 𝗙𝘂𝗹𝗹 𝗡𝗲𝘁𝗳𝗹𝗶𝘅 𝗶𝗻 ' + code.toUpperCase()
+        netflix_check_result += '𝘆𝗼𝘂 𝗰𝗮𝗻 𝘄𝗮𝘁𝗰𝗵 𝗙𝘂𝗹𝗹 𝗡𝗲𝘁𝗳𝗹𝗶𝘅 𝗶𝗻 ' + code.toUpperCase()
         return Promise.reject('BreakSignal')
       })
       .then((code) => {
@@ -167,7 +167,7 @@ panel_result['content'] = content
           return Promise.reject('Not Available')
         }
   
-        netflix_check_result += '𝘆𝗼𝘂 𝗰𝗮𝗻 𝗰𝗮𝗻 𝗼𝗻𝗹𝘆 𝘄𝗮𝘁𝗰𝗵 𝗡𝗲𝘁𝗳𝗹𝗶𝘅 𝗢𝗿𝗶𝗴𝗶𝗻𝗮𝗹 𝗶𝗻 ' + code.toUpperCase()
+        netflix_check_result += '𝘆𝗼𝘂 𝗰𝗮𝗻 𝗼𝗻𝗹𝘆 𝘄𝗮𝘁𝗰𝗵 𝗡𝗲𝘁𝗳𝗹𝗶𝘅 𝗢𝗿𝗶𝗴𝗶𝗻𝗮𝗹 𝗶𝗻 ' + code.toUpperCase()
         return Promise.reject('BreakSignal')
       })
       .catch((error) => {
