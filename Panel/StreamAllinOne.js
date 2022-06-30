@@ -31,7 +31,7 @@ const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (
       title: '𝗦𝘁𝗿𝗲𝗮𝗺 𝗖𝗵𝗲𝗰𝗸',
       content: '',
       icon: 'camera.filters',
-      'icon-color': '#419CFF',
+      'icon-color': '#3378f6',
     }
   let [{ region, status }] = await Promise.all([testDisneyPlus()])
     await Promise.all([check_netflix(),check_youtube_premium()])
