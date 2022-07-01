@@ -50,7 +50,7 @@ const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (
         //console.log(3)
         disney_result="𝗗𝗶𝘀𝗻𝗲𝘆+ 𝗱𝗼𝗲𝘀 𝗻𝗼𝘁 𝘀𝘂𝗽𝗼𝗿𝘁 𝘁𝗵𝗶𝘀 𝗜𝗣 𝗶𝗻 "+region.toUpperCase()
       } else if (status==STATUS_TIMEOUT) {
-        disney_result="𝗙𝗮𝗶𝗹𝗲𝗱! 𝗣𝗹𝗲𝗮𝘀𝗲 𝗰𝗵𝗲𝗰𝗸 𝘆𝗼𝘂𝗿 𝗡𝗲𝘁𝘄𝗼𝗿𝗸"
+        disney_result="𝗣𝗹𝗲𝗮𝘀𝗲 𝗰𝗵𝗲𝗰𝗸 𝗗𝗶𝘀𝗻𝗲𝘆+ 𝗡𝗲𝘁𝘄𝗼𝗿𝗸"
       }
 result.push(disney_result)
 console.log(result)
@@ -107,7 +107,7 @@ panel_result['content'] = content
         }
       })
       .catch((error) => {
-        youtube_check_result += '𝗙𝗮𝗶𝗹𝗲𝗱! 𝗣𝗹𝗲𝗮𝘀𝗲 𝗰𝗵𝗲𝗰𝗸 𝘆𝗼𝘂𝗿 𝗡𝗲𝘁𝘄𝗼𝗿𝗸'
+        youtube_check_result += '𝗣𝗹𝗲𝗮𝘀𝗲 𝗰𝗵𝗲𝗰𝗸 𝗬𝗼𝘂𝗧𝘂𝗯𝗲 𝗡𝗲𝘁𝘄𝗼𝗿𝗸'
       })
   
     return youtube_check_result
@@ -178,7 +178,7 @@ panel_result['content'] = content
           netflix_check_result += '𝗡𝗘𝗧𝗙𝗟𝗜𝗫 𝗱𝗼𝗲𝘀 𝗻𝗼𝘁 𝘀𝘂𝗽𝗽𝗼𝗿𝘁 𝘁𝗵𝗶𝘀 𝗜𝗣 𝗶𝗻 ' + code.toUpperCase()
           return
         }
-        netflix_check_result += '𝗙𝗮𝗶𝗹𝗲𝗱! 𝗣𝗹𝗲𝗮𝘀𝗲 𝗰𝗵𝗲𝗰𝗸 𝘆𝗼𝘂𝗿 𝗡𝗲𝘁𝘄𝗼𝗿𝗸'
+        netflix_check_result += '𝗣𝗹𝗲𝗮𝘀𝗲 𝗰𝗵𝗲𝗰𝗸 𝗡𝗘𝗧𝗙𝗟𝗜𝗫 𝗡𝗲𝘁𝘄𝗼𝗿𝗸'
       })
   
     return netflix_check_result
