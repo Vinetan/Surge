@@ -4,6 +4,3 @@
 
 // Airbuddy App
 DOMAIN-SUFFIX,assets.airbuddy.app
-
-// OneDrive
-DOMAIN-SUFFIX,self.events.data.microsoft.com
