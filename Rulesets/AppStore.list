@@ -1,0 +1,12 @@
+// iOS App Store 
+DOMAIN,xp.apple.com
+DOMAIN-SUFFIX,apps.apple.com
+
+// App Store Image
+DOMAIN-KEYWORD,mzstatic.com
+
+// App Store App视频预览
+DOMAIN,apptrailers-ssl.itunes.apple.com
+
+// Mac App store
+DOMAIN-SUFFIX,osxapps.itunes.apple.com
