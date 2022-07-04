@@ -10,8 +10,8 @@ DOMAIN,hls-svod-aoc.itunes.apple.com
 DOMAIN,apple-e.apple.com
 // DOMAIN,play-edge.itunes.apple.com
 
-// Apple DoH
-// DOMAIN-SUFFIX,doh.dns.apple.com
+// Apple Push
+DOMAIN-KEYWORD,courier.push.apple.com
 
 // FaceTime
 DOMAIN-SUFFIX,facetime.apple.com
