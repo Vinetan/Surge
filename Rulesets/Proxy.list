@@ -1,7 +1,3 @@
-// DOMAIN-SUFFIX,exitgames.com
-// DOMAIN-SUFFIX,macosicons.com
-// DOMAIN,devstreaming-cdn.apple.com
-// DOMAIN-SUFFIX,duolingo.com
-
-// Apple Map
-// DOMAIN-KEYWORD,ssl.ls.apple.com
+// Apple
+DOMAIN-KEYWORD,buy.itunes.apple.com
+DOMAIN-SUFFIX,sync.itunes.apple.com
