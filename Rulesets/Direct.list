@@ -9,6 +9,7 @@ DOMAIN,download.developer.apple.com
 DOMAIN,hls-svod-aoc.itunes.apple.com
 DOMAIN,apple-e.apple.com
 // DOMAIN,play-edge.itunes.apple.com
+DOMAIN-KEYWORD,itunes.apple.com
 
 // Apple Push
 DOMAIN-KEYWORD,courier.push.apple.com
