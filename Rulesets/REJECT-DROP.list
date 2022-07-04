@@ -1,1 +1,5 @@
-DOMAIN-SUFFIX,self.events.data.microsoft.com
+# OneDrive
+DOMAIN,self.events.data.microsoft.com
+
+# 美团
+DOMAIN,api-unionid.meituan.com
