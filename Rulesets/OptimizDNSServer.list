@@ -1,1 +1,15 @@
-# This is optimize for ADGuard DNS Server CN DOMAIN
+# This is optimize for DNS Server CN DOMAIN
+
+# 少数派
+DOMAIN,cdn.sspai.com
+
+# 阿里
+DOMAIN-SUFFIX,alicdn.com
+// DOMAIN-SUFFIX,tbcdn.cn
+
+# 腾讯
+// DOMAIN-SUFFIX,ovscdns.com
+
+# 哔哩哔哩
+DOMAIN-KEYWORD,bilicdn
+
