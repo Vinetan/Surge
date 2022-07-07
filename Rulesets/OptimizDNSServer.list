@@ -11,5 +11,5 @@ DOMAIN-SUFFIX,alicdn.com
 // DOMAIN-SUFFIX,ovscdns.com
 
 # 哔哩哔哩
-DOMAIN-KEYWORD,bilicdn
+// DOMAIN-KEYWORD,bilicdn
 
