@@ -14,7 +14,7 @@ DOMAIN,apple-e.apple.com
 
 
 // Apple Push
-DOMAIN-KEYWORD,courier.push.apple.com
+// DOMAIN-KEYWORD,courier.push.apple.com
 
 // FaceTime
 DOMAIN-SUFFIX,facetime.apple.com
