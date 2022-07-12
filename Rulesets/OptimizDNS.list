@@ -17,3 +17,5 @@ DOMAIN-SUFFIX,hdslb.com.w.kunlunpi.com
 DOMAIN-SUFFIX,hdslb.net
 DOMAIN-SUFFIX,hdslb.org
 
+# Apple Update CDN
+DOMAIN,updates.cdn-apple.com
