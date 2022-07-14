@@ -19,3 +19,6 @@ DOMAIN-SUFFIX,hdslb.org
 
 # Apple Update CDN
 DOMAIN,updates.cdn-apple.com
+
+# Apple 
+DOMAIN,apple.com.cn
