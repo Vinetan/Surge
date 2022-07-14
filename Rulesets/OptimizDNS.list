@@ -17,6 +17,9 @@ DOMAIN-SUFFIX,hdslb.org
 
 # Bili API
 DOMAIN,api.bilibili.com
+DOMAIN,api.vc.bilibili.com
+DOMAIN,api.live.bilibili.com
+DOMAIN,manga.bilibili.com
 
 # Apple Update CDN
 DOMAIN,updates.cdn-apple.com
