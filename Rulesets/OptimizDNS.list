@@ -10,15 +10,16 @@ DOMAIN-SUFFIX,img.alicdn.com
 # 腾讯
 // DOMAIN-SUFFIX,ovscdns.com
 
-# 哔哩哔哩 封面
+# Bili Cover
 DOMAIN-SUFFIX,hdslb.com
-// DOMAIN-SUFFIX,hdslb.com.w.kunlunhuf.com
-// DOMAIN-SUFFIX,hdslb.com.w.kunlunpi.com
 DOMAIN-SUFFIX,hdslb.net
 DOMAIN-SUFFIX,hdslb.org
+
+# Bili API
+DOMAIN,api.bilibili.com
 
 # Apple Update CDN
 DOMAIN,updates.cdn-apple.com
 
-# Apple 
+# Apple 官网
 DOMAIN-SUFFIX,apple.com.cn
