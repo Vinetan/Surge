@@ -21,4 +21,4 @@ DOMAIN-SUFFIX,hdslb.org
 DOMAIN,updates.cdn-apple.com
 
 # Apple 
-DOMAIN,apple.com.cn
+DOMAIN-SUFFIX,apple.com.cn
