@@ -2,6 +2,8 @@
 
 # 少数派
 DOMAIN,cdn.sspai.com
+DOMAIN,ios.sspai.com
+
 
 # 阿里
 DOMAIN-SUFFIX,gw.alicdn.com
