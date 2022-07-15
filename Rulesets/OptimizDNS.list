@@ -5,7 +5,9 @@ DOMAIN,cdn.sspai.com
 
 # 阿里
 DOMAIN-SUFFIX,gw.alicdn.com
+DOMAIN-SUFFIX,wvcfg.alicdn.com
 DOMAIN-SUFFIX,img.alicdn.com
+DOMAIN-SUFFIX,gw.alipayobjects.com
 
 # 腾讯
 // DOMAIN-SUFFIX,ovscdns.com
