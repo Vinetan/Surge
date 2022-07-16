@@ -14,6 +14,9 @@ DOMAIN-SUFFIX,gw.alipayobjects.com
 # 腾讯
 // DOMAIN-SUFFIX,ovscdns.com
 
+# 腾讯课堂
+DOMAIN,ke.qq.com
+
 # Bili Cover
 DOMAIN-SUFFIX,hdslb.com
 DOMAIN-SUFFIX,hdslb.net
