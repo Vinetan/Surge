@@ -11,6 +11,9 @@ DOMAIN-SUFFIX,wvcfg.alicdn.com
 DOMAIN-SUFFIX,img.alicdn.com
 DOMAIN-SUFFIX,gw.alipayobjects.com
 
+# 支付宝静态资源
+DOMAIN-SUFFIX,alipayobjects.com
+
 # 腾讯
 // DOMAIN-SUFFIX,ovscdns.com
 
