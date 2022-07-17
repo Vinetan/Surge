@@ -51,4 +51,7 @@ DOMAIN,apptrailers-ssl.itunes.apple.com
 DOMAIN-SUFFIX,osxapps.itunes.apple.com
 
 # Outlook
-DOMAIN,outlook.office365.com:
+DOMAIN,outlook.office365.com
+
+# 美团Image
+DOMAIN,p0.meituan.net
