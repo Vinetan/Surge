@@ -37,15 +37,18 @@ DOMAIN,updates.cdn-apple.com
 # Apple 官网
 DOMAIN-SUFFIX,apple.com.cn
 
-// iOS App Store 
+# iOS App Store 
 DOMAIN,xp.apple.com
 DOMAIN-SUFFIX,apps.apple.com
 
-// App Store Image
+# App Store Image
 DOMAIN-KEYWORD,mzstatic.com
 
-// App Store App视频预览
+# App Store App视频预览
 DOMAIN,apptrailers-ssl.itunes.apple.com
 
-// Mac App store
+# Mac App store
 DOMAIN-SUFFIX,osxapps.itunes.apple.com
+
+# Outlook
+DOMAIN,outlook.office365.com:
