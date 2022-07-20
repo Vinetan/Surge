@@ -25,7 +25,7 @@ DOMAIN-SUFFIX,hdslb.com
 DOMAIN-SUFFIX,hdslb.net
 DOMAIN-SUFFIX,hdslb.org
 
-# Bili API
+# BiliBili
 DOMAIN,api.bilibili.com
 DOMAIN,api.vc.bilibili.com
 DOMAIN,api.live.bilibili.com
