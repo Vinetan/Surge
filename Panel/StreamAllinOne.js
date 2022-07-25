@@ -302,7 +302,7 @@ panel_result['content'] = content
               reject('Error')
               return
             }
-            if (response.status !== 200 || data.indexOf('unavailable') !== -1) {
+            if (response.status !== 200 || data.indexOf('𝗦𝗼𝗿𝗿𝘆, 𝗗𝗶𝘀𝗻𝗲𝘆+ 𝗶𝘀 𝗻𝗼𝘁 𝗮𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 𝗶𝗻 𝘆𝗼𝘂𝗿 𝗿𝗲𝗴𝗶𝗼𝗻.') !== -1) {
               reject('Not Available')
               return
             }
