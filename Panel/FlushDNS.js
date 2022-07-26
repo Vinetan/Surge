@@ -25,14 +25,15 @@ flushDNS = script-name=flushDNS,update-interval=600
         dnsCache = [...new Set(dnsCache.map((d) => d.server))].toString().replace(/,/g, "\n");
     }
     if (console.log(dnsCache.indexOf("adguard-dns.com/dns-query") != -1)) {
-        serverStatus = Availabal
+        serverStatus = 'Availabal'
     } else {
-        serverStatus = Unavailabal
+        serverStatus = 'Unavailabal'
     }
     if ($trigger == "button") await httpAPI("/v1/dns/flush");
-    // let delay = ((await httpAPI("/v1/test/dns_delay")).delay * 1000).toFixed(0);
-    // panel.content = `DoH Server is ${serverStatus}`;
-    panel.content = `DoH Server is`;
+    let delay = ((await httpAPI("/v1/test/dns_delay")).delay * 1000).toFixed(0);
+    // panel.content = `delay: ${delay}ms${dnsCache ? `\nserver:\n${dnsCache}` : ""}`;
+    panel.content = `DoH Server is ${serverStatus}`;
+    // panel.content = `DoH Server is`;
     $done(panel);
 })();
 
