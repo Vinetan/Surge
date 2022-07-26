@@ -37,6 +37,9 @@ DOMAIN,updates.cdn-apple.com
 # Apple 官网
 DOMAIN-SUFFIX,apple.com.cn
 
+# Apple Store
+store.storeimages.cdn-apple.com
+
 # iOS App Store 
 DOMAIN,xp.apple.com
 DOMAIN-SUFFIX,apps.apple.com
