@@ -13,7 +13,7 @@ DOMAIN-SUFFIX,gw.alipayobjects.com
 DOMAIN-SUFFIX,alipayobjects.com
 
 # 腾讯
-// DOMAIN-SUFFIX,ovscdns.com
+# DOMAIN-SUFFIX,ovscdns.com
 
 # 腾讯课堂
 DOMAIN-SUFFIX,ke.qq.com
