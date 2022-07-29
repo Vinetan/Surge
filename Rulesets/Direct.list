@@ -34,4 +34,4 @@ DOMAIN-SUFFIX,download.epicgames.com
 DOMAIN,gateway.icloud.com:443
 
 // Adguard-DNS
-# DOMAIN-KEYWORD,adguard-dns
+DOMAIN-KEYWORD,adguard-dns
