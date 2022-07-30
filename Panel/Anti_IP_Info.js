@@ -14,16 +14,16 @@ const { wifi, v4, v6 } = $network;
   for (var key in proxy){
      allGroup.push(key)
       }
-  let group = params.group
-  let rootName = (await httpAPI("/v1/policy_groups/select?group_name="+encodeURIComponent(group)+"")).policy;
-  while(allGroup.includes(rootName)==true){
-    rootName = (await httpAPI("/v1/policy_groups/select?group_name="+encodeURIComponent(rootName)+"")).policy;
-  }
+  // let group = params.group
+  // let rootName = (await httpAPI("/v1/policy_groups/select?group_name="+encodeURIComponent(group)+"")).policy;
+  // while(allGroup.includes(rootName)==true){
+  //   rootName = (await httpAPI("/v1/policy_groups/select?group_name="+encodeURIComponent(rootName)+"")).policy;
+  // }
   
   $httpClient.get('http://ip-api.com/json', function (error, response, data) {
       const jsonData = JSON.parse(data);
       $done({
-        title: rootName,
+        title: '𝗔𝗻𝘁𝗶 𝗜𝗣 𝗖𝗵𝗲𝗰𝗸',
         content: `𝗬𝗼𝘂𝗿 𝗔𝗻𝘁𝗶 𝗜𝗣 𝗜𝗻 ${jsonData.countryCode}`,
         icon: params.icon,
         'icon-color': params.color
