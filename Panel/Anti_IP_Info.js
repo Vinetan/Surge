@@ -14,11 +14,11 @@ const { wifi, v4, v6 } = $network;
   for (var key in proxy){
      allGroup.push(key)
       }
-  // let group = params.group
-  // let rootName = (await httpAPI("/v1/policy_groups/select?group_name="+encodeURIComponent(group)+"")).policy;
-  // while(allGroup.includes(rootName)==true){
-  //   rootName = (await httpAPI("/v1/policy_groups/select?group_name="+encodeURIComponent(rootName)+"")).policy;
-  // }
+  let group = params.group
+  let rootName = (await httpAPI("/v1/policy_groups/select?group_name="+encodeURIComponent(group)+"")).policy;
+  while(allGroup.includes(rootName)==true){
+    rootName = (await httpAPI("/v1/policy_groups/select?group_name="+encodeURIComponent(rootName)+"")).policy;
+  }
   
   $httpClient.get('http://ip-api.com/json', function (error, response, data) {
       const jsonData = JSON.parse(data);
