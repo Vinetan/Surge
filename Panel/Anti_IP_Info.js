@@ -25,7 +25,7 @@ const { wifi, v4, v6 } = $network;
       $done({
         title: rootName,
         content: `𝗬𝗼𝘂𝗿 𝗔𝗻𝘁𝗶 𝗜𝗣 𝗜𝗻 ${jsonData.city}, ${jsonData.countryCode}`,
-        icon: 'location.slash.circle',
+        icon: 'circle.dotted',
         'icon-color': '#1B813E'
       });
     });
