@@ -24,8 +24,8 @@ const { wifi, v4, v6 } = $network;
       const jsonData = JSON.parse(data);
       $done({
         title: rootName,
-        content: `𝗬𝗼𝘂𝗿 𝗔𝗻𝘁𝗶 𝗜𝗣 𝗜𝗻 ${jsonData.city}` + `, ${jsonData.countryCode}`,
-        icon: mappin.slash.circle,
+        content: `𝗬𝗼𝘂𝗿 𝗔𝗻𝘁𝗶 𝗜𝗣 𝗜𝗻 ${jsonData.city}, ${jsonData.countryCode}`,
+        icon: 'mappin.slash.circle',
         'icon-color': wifi.ssid ? '#007aff' : '#75d671'
       });
     });
