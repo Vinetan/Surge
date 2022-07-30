@@ -26,7 +26,7 @@ const { wifi, v4, v6 } = $network;
         title: rootName,
         content: `𝗬𝗼𝘂𝗿 𝗔𝗻𝘁𝗶 𝗜𝗣 𝗜𝗻 ${jsonData.city}, ${jsonData.countryCode}`,
         icon: 'person.badge.shield.checkmark.fill',
-        'icon-color': wifi.ssid ? '#007aff' : '#75d671'
+        'icon-color': '#1B813E'
       });
     });
   
